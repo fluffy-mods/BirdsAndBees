@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<PawnCapacityDefs>
+  <!-- todo: pawnCapacityDef override with custom labeller for male/female -->
+  <PawnCapacityDef>
+    <defName>Reproduction</defName>
+    <label>fertility</label>
+    <listOrder>200</listOrder>
+    <lethalFlesh>false</lethalFlesh>
+    <showOnMechanoids>false</showOnMechanoids>
+  </PawnCapacityDef>
+
+</PawnCapacityDefs>

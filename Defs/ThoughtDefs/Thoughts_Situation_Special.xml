@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThoughtDefs>
+
+  <ThoughtDef>
+    <defName>Impotent</defName>
+    <workerClass>Fluffy_BirdsAndBees.ThoughtWorker_Impotent</workerClass>
+    <nullifyingTraits>
+      <li>Asexual</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>impotent</label>
+        <description>My tools aren't performing like they used to. I feel less of a man.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>impotent</label>
+        <description>My manlihood has been taken away!</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</ThoughtDefs>

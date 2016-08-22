@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef Name="DiseaseBase" Abstract="True">
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+  </HediffDef>
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>Impotence</defName>
+    <label>impotence</label>
+    <stages>
+      <li>
+        <label>minor</label>
+        <capMods>
+          <li>
+            <capacity>Reproduction</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>minor</label>
+        <minSeverity>0.3</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Reproduction</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>major</label>
+        <minSeverity>0.45</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Reproduction</capacity>
+            <offset>-0.50</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>major</label>
+        <minSeverity>0.7</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Reproduction</capacity>
+            <setMax>0</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>Menopause</defName>
+    <label>menopause</label>
+    <stages>
+      <li>
+        <label>onset</label>
+        <capMods>
+          <li>
+            <capacity>Reproduction</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>hormonal</label>
+        <minSeverity>0.3</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Reproduction</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Reproduction</capacity>
+            <setMax>0</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+</Defs>

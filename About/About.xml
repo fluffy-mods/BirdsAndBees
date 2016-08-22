@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>The Birds &amp; The Bees</name>
+	<author>Fluffy</author>
+	<url>https://ludeon.com/forums/index.php?topic=15964.0</url>
+	<targetVersion>0.14.1249</targetVersion>
+	<description>Description
+======
+
+Animals (and theoretically colonists) require reproductive organs to reproduce. 
++ Adds reproductive organs to fleshy pawns (e.g., animals and colonists).
++ Adds neutering operation (removal of said organs).
++ Since reproductive organs are now a body part, they can be affected by external violence - including, but not limited to;
+   - Gunfire
+   - Berserking colonists
+   - Frostbite
+   - Castration (Neutering)
+
+
+Technical implementation
+====== 
+The mod adds reproductive organ bodypartDefs and the reproduction PawnCapacityDef, but does not alter bodyDefs directly. Rather, it injects these parts post-load, meaning that theoretically it should be compatible with any mods that add more animals and races. Similarly, the mod alters thinktrees for any fleshy pawns (normally that'd be animals and colonists), replacing the JobGiver_Mate (animals) and JobGiver_Lovin (colonists) nodes with custom versions. JobGiver_Mate still calls the base version after a fertility check for the male partner, JobGiver_Lovin is completely overridden, colonists will still make lovin if one or both partners are infertile (neutered), but will not do so if one or both partners are completely missing their reproductive organs. Finally, the mod detours PawnUtility.FertileMateTarget to a custom version that includes a fertility check for the female partner.
+
+While this method is more complex than directly altering the defs, it should provide the best out-of-the-box compatibility with other mods.
+	</description>
+</ModMetaData>

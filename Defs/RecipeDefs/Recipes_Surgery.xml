@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+  <RecipeDef Abstract="True" Name="SurgeryFlesh">
+    <effectWorking>Surgery</effectWorking>
+    <soundWorking>Recipe_Surgery</soundWorking>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <workSkill>Medicine</workSkill>
+    <workSkillLearnFactor>16</workSkillLearnFactor>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+		<defName>Neuter</defName>
+		<label>neuter</label>
+		<description>Prevents reproduction.</description>
+		<jobString>Neutering.</jobString>
+		<workAmount>500</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<addsHediff>Neutered</addsHediff>
+   		<isViolation>true</isViolation>
+   		<workerClass>Fluffy_BirdsAndBees.Recipe_Neuter</workerClass>
+	</RecipeDef>
+  
+</RecipeDefs>
