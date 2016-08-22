@@ -1,22 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ThoughtDefs>
 
+  <!-- random, lasts an hour, only applies to females in hormonal stage of menopause -->
   <ThoughtDef>
-    <defName>Impotent</defName>
-    <workerClass>Fluffy_BirdsAndBees.ThoughtWorker_Impotent</workerClass>
-    <nullifyingTraits>
-      <li>Asexual</li>
-    </nullifyingTraits>
+    <defName>HotFlash</defName>
+    <workerClass>Fluffy_BirdsAndBees.ThoughtWorker_HotFlash</workerClass>
     <stages>
       <li>
-        <label>impotent</label>
-        <description>My tools aren't performing like they used to. I feel less of a man.</description>
-        <baseMoodEffect>-5</baseMoodEffect>
-      </li>
-      <li>
-        <label>impotent</label>
-        <description>My manlihood has been taken away!</description>
-        <baseMoodEffect>-20</baseMoodEffect>
+        <label>hot flash</label>
+        <description>I'm feeling very hot right now.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

@@ -11,6 +11,10 @@ namespace Fluffy_BirdsAndBees
         internal static BodyPartDef reproductiveOrganDef = DefDatabase<BodyPartDef>.GetNamed( "ReproductiveOrgans" );
         internal static RecipeDef neuterRecipeDef = DefDatabase<RecipeDef>.GetNamed( "Neuter" );
         internal static PawnCapacityDef reproductionCapacityDef = DefDatabase<PawnCapacityDef>.GetNamed( "Reproduction" );
+        internal static HediffDef menopauseHediff = HediffDef.Named( "Menopause" );
+
+        internal static HediffGiverSetDef fertilityHediffGiverSetDef =
+            DefDatabase<HediffGiverSetDef>.GetNamed( "HumanoidFertility" );
 
         internal static BodyPartRecord reproductiveOrganRecord = new BodyPartRecord()
                                                                  {

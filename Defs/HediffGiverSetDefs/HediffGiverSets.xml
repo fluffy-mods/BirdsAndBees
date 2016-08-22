@@ -9,13 +9,14 @@
         <female>false</female>
         <ageFractionChanceCurve>
           <points>
-            <li>(0.5, 0.0)</li>
-            <li>(0.6, 0.001)</li>
-            <li>(0.7, 0.01)</li>
-            <li>(1, 0.02)</li>
+            <li>(0.4, 0.0)</li>
+            <li>(0.5, 0.005)</li>
+            <li>(0.6, 0.015)</li>
+            <li>(0.8, 0.05)</li>
+            <li>(1.2, 0.5)</li>
           </points>
         </ageFractionChanceCurve>
-        <averageSeverityPerDayBeforeGeneration>0.001</averageSeverityPerDayBeforeGeneration>
+        <averageSeverityPerDayBeforeGeneration>0.00167</averageSeverityPerDayBeforeGeneration>
       </li>
 
       <li Class="Fluffy_BirdsAndBees.HediffGiver_Birthday_Gender">
@@ -23,14 +24,15 @@
         <female>true</female>
         <ageFractionChanceCurve>
           <points>
-            <li>(0.3, 0.0)</li>
-            <li>(0.4, 0.001)</li>
+            <li>(0.4, 0.0)</li>
             <li>(0.5, 0.01)</li>
-            <li>(0.7, 0.02)</li>
+            <li>(0.6, 0.1)</li>
+            <li>(0.8, 1)</li>
           </points>
         </ageFractionChanceCurve>
-        <averageSeverityPerDayBeforeGeneration>0.001</averageSeverityPerDayBeforeGeneration>
+        <averageSeverityPerDayBeforeGeneration>0.00333</averageSeverityPerDayBeforeGeneration>
       </li>
+    </hediffGivers>
   </HediffGiverSetDef>
   
 </Defs>

@@ -50,12 +50,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HediffGiver_Birthday_Gender.cs" />
     <Compile Include="Injector.cs" />
     <Compile Include="JobGiver_DoLovin.cs" />
     <Compile Include="JobGiver_Mate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recipe_Neuter.cs" />
     <Compile Include="Resources.cs" />
+    <Compile Include="ThoughtWorker_HotFlash.cs" />
     <Compile Include="_PawnUtility.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

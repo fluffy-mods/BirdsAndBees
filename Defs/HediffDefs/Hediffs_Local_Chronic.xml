@@ -8,10 +8,17 @@
 
   <HediffDef ParentName="DiseaseBase">
     <defName>Impotence</defName>
-    <label>impotence</label>
+    <label>impotent</label>
+    <comps>
+      <li>
+        <compClass>HediffComp_Immunizable</compClass>
+        <!-- to 100% over a period of 10 years, 12 months per year, 5 days per month, 600 days -->
+        <severityPerDayNotImmune>0.00167</severityPerDayNotImmune>
+      </li>
+    </comps>
     <stages>
       <li>
-        <label>minor</label>
+        <label>onset</label>
         <capMods>
           <li>
             <capacity>Reproduction</capacity>
@@ -40,7 +47,6 @@
         </capMods>
       </li>
       <li>
-        <label>major</label>
         <minSeverity>0.7</minSeverity>
         <capMods>
           <li>
@@ -52,10 +58,16 @@
     </stages>
   </HediffDef>
 
-
   <HediffDef ParentName="DiseaseBase">
     <defName>Menopause</defName>
-    <label>menopause</label>
+    <label>menopausal</label>
+    <comps>
+      <li>
+        <compClass>HediffComp_Immunizable</compClass>
+        <!-- to 100% over a period of 5 years, 12 months per year, 5 days per month, 300 days -->
+        <severityPerDayNotImmune>0.00333</severityPerDayNotImmune>
+      </li>
+    </comps>
     <stages>
       <li>
         <label>onset</label>

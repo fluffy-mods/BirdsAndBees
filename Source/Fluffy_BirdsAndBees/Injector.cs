@@ -28,6 +28,9 @@ namespace Fluffy_BirdsAndBees
                 .Select( r => r.race.thinkTreeMain )
                 .Distinct();
 
+            var fleshHumanoids = fleshRaces
+                .Where( r => r.race.Humanlike );
+
             // insert neuter recipe 
             Resources.Debug( "Insert recipes" );
             foreach ( ThingDef race in fleshRaces )
@@ -51,16 +54,25 @@ namespace Fluffy_BirdsAndBees
             }
 
             // replace thinktree references to JobGiver_Mate and JobGiver_Lovin
-            Resources.Debug( "Replace JobDriver_Mate" );
+            Resources.Debug( "Replace JobDriver_Mate & JobDriver_Lovin" );
             foreach ( ThinkTreeDef thinktree in fleshThinktrees )
             {
+                Resources.Debug( thinktree.defName, 1 );
                 thinktree.thinkRoot.ReplaceThinkNodeClass( typeof( RimWorld.JobGiver_Mate ),
                                                            typeof( Fluffy_BirdsAndBees.JobGiver_Mate ) );
                 thinktree.thinkRoot.ReplaceThinkNodeClass( typeof( RimWorld.JobGiver_DoLovin ),
                                                            typeof( Fluffy_BirdsAndBees.JobGiver_DoLovin ) );
             }
 
-            // detour PawnUtility.FertileMateTarget to limit the female partner.
+            // insert HediffGiverSet
+            Resources.Debug( "Inserting fertility old age hediffgivers" );
+            foreach ( ThingDef humanoid in fleshHumanoids )
+            {
+                Resources.Debug( humanoid.defName );
+                humanoid.race.hediffGiverSets.Add( Resources.fertilityHediffGiverSetDef );
+            }
+
+            // detour PawnUtility.FertileMateTarget to check fertility of the female partner.
             Resources.Debug( "Detouring PawnUtility.FertileMateTarget" );
             MethodInfo source = typeof( RimWorld.PawnUtility ).GetMethod( "FertileMateTarget", (BindingFlags) 60 );
             MethodInfo destination = typeof( _PawnUtility ).GetMethod( "FertileMateTarget", (BindingFlags) 60 );
@@ -70,7 +82,7 @@ namespace Fluffy_BirdsAndBees
                 Resources.Debug( "failed", 1 );
 
             Resources.Debug( "Done" );
-            Log.Message( "The Birds & The Bees :: ready for some lovin'" );
+            Log.Message( "The Birds & The Bees :: ready for lovin'" );
 
             return true;
         }
