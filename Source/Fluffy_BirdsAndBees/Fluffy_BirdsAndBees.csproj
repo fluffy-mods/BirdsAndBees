@@ -58,6 +58,8 @@
     <Compile Include="Recipe_Neuter.cs" />
     <Compile Include="Resources.cs" />
     <Compile Include="ThoughtWorker_HotFlash.cs" />
+    <Compile Include="_HediffGiver.cs" />
+    <Compile Include="_JobDriver_Lovin.cs" />
     <Compile Include="_PawnUtility.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

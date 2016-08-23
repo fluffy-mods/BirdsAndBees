@@ -6,14 +6,14 @@
     <hediffGivers>
       <li Class="Fluffy_BirdsAndBees.HediffGiver_Birthday_Gender">
         <hediff>Impotence</hediff>
-        <female>false</female>
+        <gender>Male</gender>
         <ageFractionChanceCurve>
           <points>
-            <li>(0.4, 0.0)</li>
-            <li>(0.5, 0.005)</li>
-            <li>(0.6, 0.015)</li>
+            <li>(0.5, 0.0)</li>
+            <li>(0.6, 0.005)</li>
+            <li>(0.7, 0.015)</li>
             <li>(0.8, 0.05)</li>
-            <li>(1.2, 0.5)</li>
+            <li>(1.5, 0.25)</li>
           </points>
         </ageFractionChanceCurve>
         <averageSeverityPerDayBeforeGeneration>0.00167</averageSeverityPerDayBeforeGeneration>
@@ -21,13 +21,13 @@
 
       <li Class="Fluffy_BirdsAndBees.HediffGiver_Birthday_Gender">
         <hediff>Menopause</hediff>
-        <female>true</female>
+        <gender>Female</gender>
         <ageFractionChanceCurve>
           <points>
             <li>(0.4, 0.0)</li>
-            <li>(0.5, 0.01)</li>
-            <li>(0.6, 0.1)</li>
-            <li>(0.8, 1)</li>
+            <li>(0.45, 0.01)</li>
+            <li>(0.5, 0.1)</li>
+            <li>(0.7, 0.5)</li>
           </points>
         </ageFractionChanceCurve>
         <averageSeverityPerDayBeforeGeneration>0.00333</averageSeverityPerDayBeforeGeneration>

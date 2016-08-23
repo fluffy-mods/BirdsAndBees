@@ -1,7 +1,9 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Reflection;
 using CommunityCoreLibrary;
 using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace Fluffy_BirdsAndBees
@@ -81,10 +83,48 @@ namespace Fluffy_BirdsAndBees
             else
                 Resources.Debug( "failed", 1 );
 
-            Resources.Debug( "Done" );
+            // detour PawnUtility.Mated to add fertility stat check for male + female
+            Resources.Debug( "Detouring PawnUtility.Mated" );
+            source = typeof( RimWorld.PawnUtility ).GetMethod( "Mated", (BindingFlags)60 );
+            destination = typeof( _PawnUtility ).GetMethod( "Mated", (BindingFlags)60 );
+            if ( Detours.TryDetourFromTo( source, destination ) )
+                Resources.Debug( "success", 1 );
+            else
+                Resources.Debug( "failed", 1 );
+
+            // detour HediffGiver.TryApply to check gender for HediffGiver_Birthday_Gender.
+            Resources.Debug( "Detouring HediffGiver.TryApply" );
+            source = typeof( Verse.HediffGiver ).GetMethod( "TryApply", (BindingFlags)60 );
+            destination = typeof( _HediffGiver ).GetMethod( "TryApply", (BindingFlags)60 );
+            if ( Detours.TryDetourFromTo( source, destination ) )
+                Resources.Debug( "success", 1 );
+            else
+                Resources.Debug( "failed", 1 );
+
+            // detour the FinishAction in the iterator block of JobDriver_Lovin.MakeNewToils
+            Resources.Debug( "Detouring Finish action of JobDriver_Lovin.MakeNewToils" );
+            source = _JobDriver_Lovin.iterator.GetMethod( _JobDriver_Lovin.FINISH_ACTION_NAME, (BindingFlags) 60 );
+            destination = typeof( _JobDriver_Lovin ).GetMethod( "FinishAction", (BindingFlags) 60 );
+            if ( Detours.TryDetourFromTo( source, destination ) )
+                Resources.Debug( "success", 1 );
+            else
+                Resources.Debug( "failed", 1 );
+
             Log.Message( "The Birds & The Bees :: ready for lovin'" );
 
+           // LogClass( typeof( JobDriver_Lovin ) );
+
             return true;
+        }
+
+        public void LogClass( Type type, int inset = 0 )
+        {
+            Resources.Debug( type.FullName, inset );
+            Resources.Debug( "==================="  );
+            foreach ( MemberInfo member in type.GetMembers( (BindingFlags)60) )
+                Resources.Debug( member.Name, inset );
+            foreach ( Type nestedType in type.GetNestedTypes((BindingFlags)60) )
+                LogClass( nestedType, inset + 1 );
         }
     }
 }

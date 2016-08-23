@@ -30,6 +30,8 @@ namespace Fluffy_BirdsAndBees
                                                                          }
                                                                  };
 
+        public static ThoughtDef failedLovingThoughtDef = ThoughtDef.Named( "FailedLoving" );
+
         public static void Debug( string text, int indent = 0 )
         {
 #if DEBUG

@@ -80,7 +80,7 @@
       </li>
       <li>
         <label>hormonal</label>
-        <minSeverity>0.3</minSeverity>
+        <minSeverity>0.2</minSeverity>
         <capMods>
           <li>
             <capacity>Reproduction</capacity>
@@ -89,7 +89,7 @@
         </capMods>
       </li>
       <li>
-        <minSeverity>0.6</minSeverity>
+        <minSeverity>0.4</minSeverity>
         <capMods>
           <li>
             <capacity>Reproduction</capacity>

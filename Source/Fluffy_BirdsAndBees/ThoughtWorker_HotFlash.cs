@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace Fluffy_BirdsAndBees
@@ -23,7 +24,7 @@ namespace Fluffy_BirdsAndBees
             int quasiRandomStaticNumber = p.RandSeedForHour( 5 ) % 24; 
             Resources.Debug( "valid, number:" + quasiRandomStaticNumber, 1 );
 
-            if ( quasiRandomStaticNumber == 5)
+            if ( Math.Abs( quasiRandomStaticNumber ) == 5)
                 return ThoughtState.ActiveDefault;
 
             // not currently experiencing hot flashes
