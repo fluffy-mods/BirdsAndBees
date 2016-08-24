@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using CommunityCoreLibrary;
@@ -71,6 +72,8 @@ namespace Fluffy_BirdsAndBees
             foreach ( ThingDef humanoid in fleshHumanoids )
             {
                 Resources.Debug( humanoid.defName );
+                if (humanoid.race.hediffGiverSets.NullOrEmpty())
+                    humanoid.race.hediffGiverSets = new List<HediffGiverSetDef>();
                 humanoid.race.hediffGiverSets.Add( Resources.fertilityHediffGiverSetDef );
             }
 
@@ -111,20 +114,8 @@ namespace Fluffy_BirdsAndBees
                 Resources.Debug( "failed", 1 );
 
             Log.Message( "The Birds & The Bees :: ready for lovin'" );
-
-           // LogClass( typeof( JobDriver_Lovin ) );
-
+            
             return true;
-        }
-
-        public void LogClass( Type type, int inset = 0 )
-        {
-            Resources.Debug( type.FullName, inset );
-            Resources.Debug( "==================="  );
-            foreach ( MemberInfo member in type.GetMembers( (BindingFlags)60) )
-                Resources.Debug( member.Name, inset );
-            foreach ( Type nestedType in type.GetNestedTypes((BindingFlags)60) )
-                LogClass( nestedType, inset + 1 );
         }
     }
 }
