@@ -2,7 +2,7 @@
 <ThoughtDefs>
   
   <ThoughtDef>
-    <defName>FailedLovingMale</defName>
+    <defName>FailedLovinMale</defName>
     <thoughtClass>Thought_MemorySocial</thoughtClass>
     <durationDays>1.0</durationDays>
     <stackLimit>3</stackLimit>
@@ -18,7 +18,7 @@
   </ThoughtDef>
   
   <ThoughtDef>
-    <defName>FailedLovingFemale</defName>
+    <defName>FailedLovinFemale</defName>
     <thoughtClass>Thought_MemorySocial</thoughtClass>
     <durationDays>1.0</durationDays>
     <stackLimit>3</stackLimit>
