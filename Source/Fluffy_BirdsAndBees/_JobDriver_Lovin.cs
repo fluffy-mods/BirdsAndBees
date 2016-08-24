@@ -66,12 +66,12 @@ namespace Fluffy_BirdsAndBees
             // failed lovin
             else
             {
-                // TODO: Split up for male/female versions.
-                Thought_Memory badLovinMemory = (Thought_Memory) ThoughtMaker.MakeThought( Resources.failedLovingThoughtDef );
+                Thought_Memory badLovinMemory = driver.pawn.gender == Gender.Female
+                    ? (Thought_Memory)ThoughtMaker.MakeThought( Resources.failedLovingThoughtDef_Female )
+                    : (Thought_Memory) ThoughtMaker.MakeThought( Resources.failedLovingThoughtDef_Male );
                 driver.pawn.needs.mood.thoughts.memories.TryGainMemoryThought( badLovinMemory, partner );
             }
-
-
+            
             driver.pawn.mindState.canLovinTick = Find.TickManager.TicksGame + ticksToNextLovin;
         }
     }

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThoughtDefs>
+  
+  <ThoughtDef>
+    <defName>FailedLovingMale</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>1.0</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.2</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>couldn't perform lovin'</label>
+        <description>I couldn't perform my marital duties. What else can this blasted colony take away from me?</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+        <baseOpinionOffset>-5</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>FailedLovingFemale</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>1.0</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.2</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>my spouse couldn't perform lovin'</label>
+        <description>I've told him it's ok.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+        <baseOpinionOffset>-5</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</ThoughtDefs>

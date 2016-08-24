@@ -30,7 +30,8 @@ namespace Fluffy_BirdsAndBees
                                                                          }
                                                                  };
 
-        public static ThoughtDef failedLovingThoughtDef = ThoughtDef.Named( "FailedLoving" );
+        public static ThoughtDef failedLovingThoughtDef_Male = ThoughtDef.Named( "FailedLovingMale" );
+        public static ThoughtDef failedLovingThoughtDef_Female = ThoughtDef.Named( "FailedLovinFemale" );
 
         public static void Debug( string text, int indent = 0 )
         {
