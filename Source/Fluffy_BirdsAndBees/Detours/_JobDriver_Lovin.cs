@@ -3,17 +3,17 @@ using System.Reflection;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using static Fluffy_BirdsAndBees.Resources;
 
 namespace Fluffy_BirdsAndBees
 {
     public static class _JobDriver_Lovin
     {
-        public const string ITERATOR_NAME = "<MakeNewToils>c__Iterator33";
+        public const string ITERATOR_NAME = "<MakeNewToils>c__Iterator31";
         public const string DRIVER_FIELD_NAME = "<>f__this";
-        public const string FINISH_ACTION_NAME = "<>m__96";
+        public const string FINISH_ACTION_NAME = "<>m__91";
 
         const BindingFlags ALL = (BindingFlags) 60;
-
         private static Type driverType;
         internal static Type iterator;
         private static FieldInfo driverFieldInfo;
@@ -24,25 +24,25 @@ namespace Fluffy_BirdsAndBees
         {
             driverType = typeof( JobDriver_Lovin );
             if (driverType == null)
-                Resources.Debug( "driverType NULL" );
+                Debug( "driverType NULL" );
             iterator = driverType.GetNestedType( ITERATOR_NAME, ALL );
             if ( iterator == null )
-                Resources.Debug( "iterator NULL" );
+                Debug( "iterator NULL" );
             driverFieldInfo = iterator.GetField( DRIVER_FIELD_NAME, ALL );
             if ( driverFieldInfo == null )
-                Resources.Debug( "driverFieldInfo NULL" );
+                Debug( "driverFieldInfo NULL" );
             partnerGetMethodInfo = driverType.GetProperty( "Partner", ALL ).GetGetMethod( true );
             if ( partnerGetMethodInfo == null )
-                Resources.Debug( "partnerGetMethodInfo NULL" );
+                Debug( "partnerGetMethodInfo NULL" );
             genTicksToNextLovinMethodInfo = driverType.GetMethod( "GenerateRandomMinTicksToNextLovin", ALL );
             if ( genTicksToNextLovinMethodInfo == null )
-                Resources.Debug( "genTicksToNextLovinMethodInfo NULL" );
+                Debug( "genTicksToNextLovinMethodInfo NULL" );
         }
 
         public static void FinishAction( object _this )
         {
             if ( _this == null )
-                throw new Exception( "COuld not get iterator" );
+                throw new Exception( "Could not get iterator" );
             JobDriver_Lovin driver = driverFieldInfo.GetValue( _this ) as JobDriver_Lovin;
             if ( driver == null )
                 throw new Exception( "Could not get driver" );
@@ -57,18 +57,19 @@ namespace Fluffy_BirdsAndBees
             Rand.Seed = seed;
             
             // succesful lovin
-            if ( Rand.Value < driver.pawn.health.capacities.GetEfficiency( Resources.reproductionCapacityDef ) )
+            if ( Rand.Value < driver.pawn.health.capacities.GetEfficiency( reproductionCapacityDef ) )
             {
                 Thought_Memory goodLovinMemory = (Thought_Memory) ThoughtMaker.MakeThought( ThoughtDefOf.GotSomeLovin );
-                goodLovinMemory.moodPowerFactor = Mathf.Max( driver.pawn.relations.AttractionTo( partner ), 0.1f );
+                // TODO: figure out where attraction is hiding in A16, and if we want to add it back in as a mood factor.
+                // goodLovinMemory.moodPowerFactor = Mathf.Max( driver.pawn.relations.AttractionTo( partner ), 0.1f );
                 driver.pawn.needs.mood.thoughts.memories.TryGainMemoryThought( goodLovinMemory, partner );
             }
             // failed lovin
             else
             {
                 Thought_Memory badLovinMemory = driver.pawn.gender == Gender.Female
-                    ? (Thought_Memory)ThoughtMaker.MakeThought( Resources.failedLovingThoughtDef_Female )
-                    : (Thought_Memory) ThoughtMaker.MakeThought( Resources.failedLovingThoughtDef_Male );
+                    ? (Thought_Memory)ThoughtMaker.MakeThought( failedLovingThoughtDef_Female )
+                    : (Thought_Memory) ThoughtMaker.MakeThought( failedLovingThoughtDef_Male );
                 driver.pawn.needs.mood.thoughts.memories.TryGainMemoryThought( badLovinMemory, partner );
             }
             

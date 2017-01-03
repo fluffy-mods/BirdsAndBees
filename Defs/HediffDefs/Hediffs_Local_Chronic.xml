@@ -10,7 +10,7 @@
     <defName>Impotence</defName>
     <label>impotent</label>
     <comps>
-      <li>
+      <li Class="HediffCompProperties_Immunizable">
         <compClass>HediffComp_Immunizable</compClass>
         <!-- to 100% over a period of 10 years, 12 months per year, 5 days per month, 600 days -->
         <severityPerDayNotImmune>0.00167</severityPerDayNotImmune>
@@ -62,7 +62,7 @@
     <defName>Menopause</defName>
     <label>menopausal</label>
     <comps>
-      <li>
+      <li Class="HediffCompProperties_Immunizable">
         <compClass>HediffComp_Immunizable</compClass>
         <!-- to 100% over a period of 5 years, 12 months per year, 5 days per month, 300 days -->
         <severityPerDayNotImmune>0.00333</severityPerDayNotImmune>

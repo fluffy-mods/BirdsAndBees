@@ -16,14 +16,14 @@ namespace Fluffy_BirdsAndBees
         internal static HediffGiverSetDef fertilityHediffGiverSetDef =
             DefDatabase<HediffGiverSetDef>.GetNamed( "HumanoidFertility" );
 
-        internal static BodyPartRecord reproductiveOrganRecord = new BodyPartRecord()
+        internal static BodyPartRecord reproductiveOrganRecord = new BodyPartRecord
                                                                  {
                                                                      coverage = .01f,
                                                                      depth = BodyPartDepth.Outside,
                                                                      height = BodyPartHeight.Bottom,
                                                                      def = reproductiveOrganDef,
                                                                      groups =
-                                                                         new List<BodyPartGroupDef>()
+                                                                         new List<BodyPartGroupDef>
                                                                          {
                                                                              BodyPartGroupDefOf
                                                                                  .Torso
@@ -36,13 +36,15 @@ namespace Fluffy_BirdsAndBees
         public static void Debug( string text, int indent = 0 )
         {
 #if DEBUG
-            string msg = "";
+            string prefix = "";
             for ( int i = 0; i < indent; i++ )
             {
-                msg += "\t";
+                prefix += "\t";
             }
-            msg += "BirdsAndBees :: " + text;
-            Log.Message( msg );
+
+            if ( indent == 0 )
+                prefix += "BirdsAndBees :: ";
+            Log.Message( prefix + text );
 #endif
         }
     }

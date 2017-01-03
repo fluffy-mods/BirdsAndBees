@@ -1,34 +1,39 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ModMetaData>
-	<name>The Birds &amp; The Bees</name>
-	<author>Fluffy</author>
-	<url>https://ludeon.com/forums/index.php?topic=15964.0</url>
-	<targetVersion>0.14.1249</targetVersion>
-	<description>Description
-======
+  <name>The Birds and the Bees</name>
+  <author>Fluffy</author>
+  <url>https://ludeon.com/forums/index.php?topic=15964.0</url>
+  <targetVersion>0.16.1393</targetVersion>
+  <description>Adds reproductive organs to the animals, and then you, raiders and time can take them away again. 
 
-Animals (including humanoids) require reproductive organs to mate &amp; and do lovin'. 
-+ Adds reproductive organs to fleshy pawns (e.g., animals and colonists).
-+ Adds neutering operation (removal of said organs).
-+ Since reproductive organs are now a body part, they can be affected by external violence - including, but not limited to;
-   - Gunfire
-   - Berserking colonists
-   - Frostbite
-   - Castration (Neutering)
-+ In addition, old age will also have an effect on humanoids;
-   - Impotence
-   - Menopause, hot flashes
-+ Reworks mating &amp; lovin' to take account of fertility stat.
-   - Failure to do lovin' will depress your pawns.
+&lt;size=24&gt;Important&lt;/size&gt;
+&lt;b&gt;Requires HugsLib&lt;/b&gt; 
+
+&lt;b&gt;Does NOT require a new save game&lt;/b&gt; 
+This mod uses CCL to dynamically change game data* when a game is loaded. Should be fine to use with any other mod that adds animals, races, relations, or anything else. 
+
+&lt;size=24&gt;Features&lt;/size&gt;
+Animals (including humanoids) require reproductive organs to mate &amp; and do lovin’. 
 
 
-Technical implementation
-====== 
-The mod adds reproductive organ bodypartDefs and the reproduction PawnCapacityDef, but does not alter bodyDefs directly. Rather, it injects these parts post-load, meaning that theoretically it should be compatible with any mods that add more animals and races. Similarly, the mod alters thinktrees for any fleshy pawns (normally that'd be animals and colonists), replacing the JobGiver_Mate (animals) and JobGiver_Lovin (colonists) nodes with custom versions. JobGiver_Mate still calls the base version after a fertility check for the male partner, JobGiver_Lovin is completely overridden, colonists will still make lovin if one or both partners are infertile (neutered), but will not do so if one or both partners are completely missing their reproductive organs. 
+Adds reproductive organs to fleshy pawns (e.g., animals and colonists). 
+Since reproductive organs are now a body part, they can be affected by external violence - including, but not limited to; gunfire, berserking colonists, frostbite, castration (neutering) and old age.
+Reworks mating &amp; lovin’ to take account of fertility stat. 
 
-While this method is more complex than directly altering the defs, it should provide the best out-of-the-box compatibility with other mods.
+&lt;size=24&gt;Does this mod add the ability for colonists to have babies?&lt;/size&gt;
+&lt;i&gt;No. Nor will I ever add this, so don’t ask.&lt;/i&gt;
+There’s a myriad of problems with adding colonist babies. There’s moral/ethical issues, but I don’t particularly care about those, I don’t see why making baby leather hats is worse than prisoner leather hats. 
 
-Furthermore, the mod detours PawnUtility.FertileMateTarget to a custom version that includes a fertility check for the female partner, PawnUtility.Mated to link the likelihood of impregnation to the fertility stat, HediffGiver.TryApply to allow a HediffGiver to only apply to a particular gender, and the FinishAction in the MakeNewToils iterator block of JobDriver_Lovin to add moods for failed lovin'. The FinishAction detour depends on compiler generated names to perform correctly, and will likely break in new builds of RimWorld.
+What I do care about is gameplay. For me, two things are required to make babies actually fun. 
 
-	</description>
+First, there needs to be systems around babies. If they’re just colonists or animals in behaviour, I don’t see the point. You’d have to have various interactions from parents with their children, amongst children, children with the environment, etc. etc. to really bring children alive. Then you’d also want to build in things like schools or at least some sort of internships/apprenticeships, the list goes on and on. 
+The problem with all of this is that it takes a huge amount of work - including a number of new gameplay mechanics. It’s something better suited for Tynan himself to add to the game. 
+
+Second, the timescale just doesn’t work. The average colony will last a couple of years, 10 if you’re in it for the long haul. Only rarely do colonies last longer than that. That would mean that there’s not really any room for progression, and I don’t see the fun in that. Adding cloning vats, time chambers, gro-quick drugs or whatever are weak solutions for a fundamental problem, and I don’t want to go that way. Changing the games timescale is pretty much impossible for mods to do. 
+
+&lt;i&gt;TLDR; if you want babies, go ask Tynan.&lt;/i&gt;
+
+tag:Fluffylicious
+
+</description>
 </ModMetaData>
