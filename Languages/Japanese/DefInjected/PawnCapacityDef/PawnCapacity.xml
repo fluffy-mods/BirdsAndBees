@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- todo: pawnCapacityDef override with custom labeller for male/female -->
+  <Reproduction.label>生殖機能</Reproduction.label>
+</LanguageData>
