@@ -53,9 +53,13 @@ namespace Fluffy_BirdsAndBees
             foreach ( BodyDef body in fleshBodies )
             {
                 Debug( body.defName, 1 );
+
                 // insert body part
                 body.corePart.parts.Add( reproductiveOrganRecord );
-                Debug( "Inserted part", 2 );
+                Debug( $"Inserted part, available space: {body.corePart.fleshCoverage}", 2 );
+                if ( body.corePart.fleshCoverage < reproductiveOrganRecord.coverage )
+                    foreach ( BodyPartRecord part in body.corePart.parts )
+                        Debug( $"{part.def.LabelCap} coverage {part.coverage}", 3 );
 
                 // force recache
                 // but first, remove the old cache (We don't really want octo-humans, do we?)
