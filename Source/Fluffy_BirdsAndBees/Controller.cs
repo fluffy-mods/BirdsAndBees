@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Reflection;
 using Fluffy_BirdsAndBees.Extensions;
+using Harmony;
 using HugsLib;
 using HugsLib.Source.Detour;
 using RimWorld;
@@ -57,6 +58,8 @@ namespace Fluffy_BirdsAndBees
                 Debug( "Inserted part", 2 );
 
                 // force recache
+                // but first, remove the old cache (We don't really want octo-humans, do we?)
+                Traverse.Create( body ).Field( "cachedAllParts" ).SetValue( new List<BodyPartRecord>() );
                 body.ResolveReferences();
                 Debug( "Resolves", 2 );
             }
@@ -82,38 +85,19 @@ namespace Fluffy_BirdsAndBees
                 humanoid.race.hediffGiverSets.Add( fertilityHediffGiverSetDef );
             }
 
-            // detour PawnUtility.FertileMateTarget to check fertility of the female partner.
-            Debug( "Detouring PawnUtility.FertileMateTarget" );
-            MethodInfo source = typeof( PawnUtility ).GetMethod( "FertileMateTarget", (BindingFlags) 60 );
-            MethodInfo destination = typeof( _PawnUtility ).GetMethod( "FertileMateTarget", (BindingFlags) 60 );
-            if ( DetourProvider.TryCompatibleDetour( source, destination ) )
-                Debug( "success", 1 );
-            else
-                Debug( "failed", 1 );
-
-            // detour PawnUtility.Mated to add fertility stat check for male + female
-            Debug( "Detouring PawnUtility.Mated" );
-            source = typeof( PawnUtility ).GetMethod( "Mated", (BindingFlags)60 );
-            destination = typeof( _PawnUtility ).GetMethod( "Mated", (BindingFlags)60 );
-            if ( DetourProvider.TryCompatibleDetour( source, destination ) )
-                Debug( "success", 1 );
-            else
-                Debug( "failed", 1 );
-
-            // detour HediffGiver.TryApply to check gender for HediffGiver_Birthday_Gender.
-            Debug( "Detouring HediffGiver.TryApply" );
-            source = typeof( HediffGiver ).GetMethod( "TryApply", (BindingFlags)60 );
-            destination = typeof( _HediffGiver ).GetMethod( "TryApply", (BindingFlags)60 );
-            if ( DetourProvider.TryCompatibleDetour( source, destination ) )
-                Debug( "success", 1 );
-            else
-                Debug( "failed", 1 );
-
+            // Harmony magic
+            var harmony = HarmonyInstance.Create( "rimworld.fluffy.birdsandbees" );
+            // patches;
+            // HediffGiver.TryApply()
+            // PawnUtility.FertileMateTarget()
+            // PawnUtility.Mated()
+            harmony.PatchAll( Assembly.GetExecutingAssembly() );
+            
             // detour the FinishAction in the iterator block of JobDriver_Lovin.MakeNewToils
             // note that this is a horrible idea under all normal circumstances - but I didn't want to rewrite the toil.
             Debug( "Detouring Finish action of JobDriver_Lovin.MakeNewToils" );
-            source = _JobDriver_Lovin.iterator.GetMethod( _JobDriver_Lovin.FINISH_ACTION_NAME, (BindingFlags) 60 );
-            destination = typeof( _JobDriver_Lovin ).GetMethod( "FinishAction", (BindingFlags) 60 );
+            MethodInfo source = _JobDriver_Lovin.iterator.GetMethod( _JobDriver_Lovin.FINISH_ACTION_NAME, (BindingFlags) 60 );
+            MethodInfo destination = typeof( _JobDriver_Lovin ).GetMethod( "FinishAction", (BindingFlags) 60 );
             if ( DetourProvider.TryCompatibleDetour( source, destination ) )
                 Debug( "success", 1 );
             else

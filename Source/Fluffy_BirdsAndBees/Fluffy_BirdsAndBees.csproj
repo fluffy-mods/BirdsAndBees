@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\harmony\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -59,9 +62,9 @@
     <Compile Include="Recipe_Neuter.cs" />
     <Compile Include="Resources.cs" />
     <Compile Include="ThoughtWorker_HotFlash.cs" />
-    <Compile Include="Detours\_HediffGiver.cs" />
-    <Compile Include="Detours\_JobDriver_Lovin.cs" />
-    <Compile Include="Detours\_PawnUtility.cs" />
+    <Compile Include="Harmony\HediffGiver.cs" />
+    <Compile Include="Harmony\_JobDriver_Lovin.cs" />
+    <Compile Include="Harmony\PawnUtility.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

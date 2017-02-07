@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Reflection;
+using Harmony;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -14,6 +15,7 @@ namespace Fluffy_BirdsAndBees
         public const string FINISH_ACTION_NAME = "<>m__91";
 
         const BindingFlags ALL = (BindingFlags) 60;
+        
         private static Type driverType;
         internal static Type iterator;
         private static FieldInfo driverFieldInfo;
@@ -68,7 +70,7 @@ namespace Fluffy_BirdsAndBees
             else
             {
                 Thought_Memory badLovinMemory = driver.pawn.gender == Gender.Female
-                    ? (Thought_Memory)ThoughtMaker.MakeThought( failedLovingThoughtDef_Female )
+                    ? (Thought_Memory) ThoughtMaker.MakeThought( failedLovingThoughtDef_Female )
                     : (Thought_Memory) ThoughtMaker.MakeThought( failedLovingThoughtDef_Male );
                 driver.pawn.needs.mood.thoughts.memories.TryGainMemoryThought( badLovinMemory, partner );
             }
