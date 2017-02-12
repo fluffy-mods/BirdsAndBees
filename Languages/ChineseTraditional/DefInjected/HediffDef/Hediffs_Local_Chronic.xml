@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Impotence.label>性功能障礙</Impotence.label>
+  <Impotence.stages.0.label>發病</Impotence.stages.0.label>
+  <Impotence.stages.1.label>較輕</Impotence.stages.1.label>
+  <Impotence.stages.2.label>嚴重</Impotence.stages.2.label>
+
+  <Menopause.label>更年期</Menopause.label>
+  <Menopause.stages.0.label>發病</Menopause.stages.0.label>
+  <Menopause.stages.1.label>荷爾蒙</Menopause.stages.1.label>
+
+
+</LanguageData>
