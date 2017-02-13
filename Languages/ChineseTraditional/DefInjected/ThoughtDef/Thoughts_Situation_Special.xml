@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- random, lasts an hour, only applies to females in hormonal stage of menopause -->
+
+  <HotFlash.stages.0.label>潮熱</HotFlash.stages.0.label>
+  <HotFlash.stages.0.description>現在我感覺非常熱。</HotFlash.stages.0.description>
+
+
+</LanguageData>
