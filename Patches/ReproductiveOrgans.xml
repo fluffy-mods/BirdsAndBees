@@ -1,0 +1,27 @@
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>//ThingDef[not(recipes) and ( not( race/fleshType ) or race/fleshType != "Mechanoid" )]</xpath>
+        <success>Always</success>
+        <value>
+            <recipes />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>//ThingDef[not( race/fleshType ) or race/fleshType != "Mechanoid" ]/recipes</xpath>
+        <value><li>Neuter</li></value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>//ThingDef/race[not( hediffGiverSets ) and ( not( fleshType ) or fleshType = "Normal" ) and intelligence = "Humanlike"]</xpath>
+        <success>Always</success>
+        <value>
+            <hediffGiverSets />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>//ThingDef/race[( not( fleshType ) or fleshType = "Normal" ) and intelligence = "Humanlike"]/hediffGiverSets</xpath>
+        <value><li>HumanoidFertility</li></value>
+    </Operation>
+</Patch>

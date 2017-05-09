@@ -3,6 +3,7 @@ using Harmony;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using static Fluffy_BirdsAndBees.Resources;
 
 namespace Fluffy_BirdsAndBees
 {
@@ -13,7 +14,7 @@ namespace Fluffy_BirdsAndBees
         static bool Prefix( HediffGiver __instance, ref bool __result, Pawn pawn )
         {
             // if the instance is of gendered type, check pawn gender before applying.
-            Resources.Debug( "HediffGiver.TryApply(" + __instance.hediff.defName + ", " + pawn.NameStringShort + " [" +
+            Debug( "HediffGiver.TryApply(" + __instance.hediff.defName + ", " + pawn.NameStringShort + " [" +
                              pawn.gender + "])" );
             HediffGiver_Birthday_Gender gendered = __instance as HediffGiver_Birthday_Gender;
             if ( gendered != null && gendered.gender != pawn.gender )
@@ -22,7 +23,7 @@ namespace Fluffy_BirdsAndBees
                 return false; // stop further execution
             }
 
-            Resources.Debug( "OK", 1 );
+            Debug( "OK", 1 );
             return true; // allow further execution of vanilla HediffGiver.TryApply()
         }
     }

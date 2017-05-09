@@ -40,10 +40,6 @@
     <Reference Include="harmonycheck">
       <HintPath>..\..\..\..\harmony\harmonycheck.dll</HintPath>
     </Reference>
-    <Reference Include="HugsLib">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\818773962\Assemblies\HugsLib.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,11 +52,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extensions\ThinkNode_Extensions.cs" />
+    <Compile Include="DefOfs.cs" />
+    <Compile Include="Harmony\GenerateImpliedDefs_PreResolve.cs" />
+    <Compile Include="Harmony\JobGiver_DoLovin.cs" />
+    <Compile Include="Harmony\JobGiver_Mate.cs" />
     <Compile Include="HediffGiver_Birthday_Gender.cs" />
     <Compile Include="Controller.cs" />
-    <Compile Include="JobGiver_DoLovin.cs" />
-    <Compile Include="JobGiver_Mate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recipe_Neuter.cs" />
     <Compile Include="Resources.cs" />

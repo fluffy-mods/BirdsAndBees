@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Security.Permissions;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -7,35 +11,27 @@ namespace Fluffy_BirdsAndBees
 {
     public static class Resources
     {
-        internal static HediffDef neuteredHediff = HediffDef.Named( "Neutered" );
-        internal static BodyPartDef reproductiveOrganDef = DefDatabase<BodyPartDef>.GetNamed( "ReproductiveOrgans" );
-        internal static RecipeDef neuterRecipeDef = DefDatabase<RecipeDef>.GetNamed( "Neuter" );
-        internal static PawnCapacityDef reproductionCapacityDef = DefDatabase<PawnCapacityDef>.GetNamed( "Reproduction" );
-        internal static HediffDef menopauseHediff = HediffDef.Named( "Menopause" );
+        public static BodyPartRecord New_ReproductiveOrgans => new BodyPartRecord(){
+                                                         coverage = 0.005f,
+                                                         def = BodyPartDefOf.ReproductiveOrgans,
+                                                         depth = BodyPartDepth.Outside,
+                                                         groups = new List<BodyPartGroupDef>( new [] { BodyPartGroupDefOf.Torso } ),
+                                                         height = BodyPartHeight.Middle
+                                                     };
 
-        internal static HediffGiverSetDef fertilityHediffGiverSetDef =
-            DefDatabase<HediffGiverSetDef>.GetNamed( "HumanoidFertility" );
+        public static BodyPartRecord ReproductiveOrgans( this Pawn pawn )
+        {
+            return pawn.RaceProps.body.ReproductiveOrgans();
+        }
 
-        internal static BodyPartRecord reproductiveOrganRecord = new BodyPartRecord
-                                                                 {
-                                                                     coverage = .01f,
-                                                                     depth = BodyPartDepth.Outside,
-                                                                     height = BodyPartHeight.Bottom,
-                                                                     def = reproductiveOrganDef,
-                                                                     groups =
-                                                                         new List<BodyPartGroupDef>
-                                                                         {
-                                                                             BodyPartGroupDefOf
-                                                                                 .Torso
-                                                                         }
-                                                                 };
+        public static BodyPartRecord ReproductiveOrgans( this BodyDef body )
+        {
+            return body.AllParts.FirstOrDefault( part => part.def == BodyPartDefOf.ReproductiveOrgans );
+        }
 
-        public static ThoughtDef failedLovingThoughtDef_Male = ThoughtDef.Named( "FailedLovinMale" );
-        public static ThoughtDef failedLovingThoughtDef_Female = ThoughtDef.Named( "FailedLovinFemale" );
-
+        [Conditional("DEBUG")]
         public static void Debug( string text, int indent = 0 )
         {
-#if DEBUG
             string prefix = "";
             for ( int i = 0; i < indent; i++ )
             {
@@ -45,7 +41,6 @@ namespace Fluffy_BirdsAndBees
             if ( indent == 0 )
                 prefix += "BirdsAndBees :: ";
             Log.Message( prefix + text );
-#endif
         }
     }
 }

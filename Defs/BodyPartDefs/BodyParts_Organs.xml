@@ -9,9 +9,6 @@
     <bleedingRateMultiplier>1.5</bleedingRateMultiplier>
     <skinCovered>true</skinCovered>
     <frostbiteVulnerability>1</frostbiteVulnerability>
-    <activities>
-      <li>Reproduction</li>
-    </activities>
     <dontSuggestAmputation>true</dontSuggestAmputation>
   </BodyPartDef>
 

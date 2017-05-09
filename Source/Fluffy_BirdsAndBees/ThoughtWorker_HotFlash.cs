@@ -13,8 +13,7 @@ namespace Fluffy_BirdsAndBees
             Debug( "ThoughtWorker_HotFlash.CurrentStateInternal(" + p.NameStringShort + ")"  );
             // only applies to females in the hormonal state of menopause
             if ( p.gender != Gender.Female
-                 || !p.health.hediffSet.HasHediff( menopauseHediff )
-                 || p.health.hediffSet.GetFirstHediffOfDef( menopauseHediff ).CurStageIndex != 1 )
+                 || p.health.hediffSet.GetFirstHediffOfDef( HediffDefOf.Menopause )?.CurStageIndex != 1 )
                 return ThoughtState.Inactive;
             
             // lasts an hour, for on average an hour per day.

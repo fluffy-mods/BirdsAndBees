@@ -16,9 +16,28 @@
 		<jobString>Neutering.</jobString>
 		<workAmount>500</workAmount>
 		<hideBodyPartNames>true</hideBodyPartNames>
+		<targetsBodyPart>true</targetsBodyPart>
+		<appliedOnFixedBodyParts>
+			<li>ReproductiveOrgans</li>
+		</appliedOnFixedBodyParts>
 		<addsHediff>Neutered</addsHediff>
-   		<isViolation>true</isViolation>
-   		<workerClass>Fluffy_BirdsAndBees.Recipe_Neuter</workerClass>
+		<isViolation>true</isViolation>
+		<workerClass>Fluffy_BirdsAndBees.Recipe_Neuter</workerClass>		
+		<ingredients>
+			<li>
+				<filter>
+          <categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
 	</RecipeDef>
   
 </RecipeDefs>

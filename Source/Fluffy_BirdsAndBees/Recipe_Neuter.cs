@@ -12,8 +12,8 @@ namespace Fluffy_BirdsAndBees
         public override IEnumerable<BodyPartRecord> GetPartsToApplyOn( Pawn pawn, RecipeDef recipe )
         {
             Debug( "GetPartsToApplyOn" );
-            if ( !pawn.health.hediffSet.HasHediff( neuteredHediff ) && !pawn.health.hediffSet.PartIsMissing( reproductiveOrganRecord ))
-                yield return reproductiveOrganRecord;
+            if ( !pawn.health.hediffSet.HasHediff( HediffDefOf.Neutered ) && !pawn.health.hediffSet.PartIsMissing( pawn.ReproductiveOrgans() ))
+                yield return pawn.ReproductiveOrgans();
         }
 
         public override void ApplyOnPawn( Pawn pawn, BodyPartRecord part, Pawn billDoer, List<Thing> ingredients )
@@ -21,7 +21,7 @@ namespace Fluffy_BirdsAndBees
             Debug( "ApplyOnPawn" );
             if ( billDoer != null )
             {
-                if ( CheckSurgeryFail( billDoer, pawn, ingredients, reproductiveOrganRecord ) )
+                if ( CheckSurgeryFail( billDoer, pawn, ingredients, pawn.ReproductiveOrgans() ) )
                     return;
                 TaleRecorder.RecordTale( TaleDefOf.DidSurgery, billDoer, pawn );
             }
