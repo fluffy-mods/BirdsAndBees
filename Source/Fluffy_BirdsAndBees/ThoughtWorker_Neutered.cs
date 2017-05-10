@@ -14,10 +14,10 @@ namespace Fluffy_BirdsAndBees
             if ( !p.RaceProps.Humanlike )
                 return ThoughtState.Inactive;
 
-            if ( p.health.hediffSet.HasHediff( HediffDefOf.Neutered ) )
+            if (p.health.hediffSet.PartIsMissing(p.ReproductiveOrgans()))
+                return ThoughtState.ActiveAtStage(1);
+            if ( !p.health.capacities.CapableOf( PawnCapacityDefOf.Reproduction ) ) // neutered, basic implants
                 return ThoughtState.ActiveAtStage( 0 );
-            if ( p.health.hediffSet.PartIsMissing( p.ReproductiveOrgans() ) )
-                return ThoughtState.ActiveAtStage( 1 );
             return ThoughtState.Inactive;
         }
     }

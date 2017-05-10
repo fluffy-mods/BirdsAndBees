@@ -2,35 +2,37 @@
 <ThoughtDefs>
   
   <ThoughtDef>
-    <defName>FailedLovinMale</defName>
+    <defName>LovinPerformance</defName>
     <thoughtClass>Thought_MemorySocial</thoughtClass>
     <durationDays>1.0</durationDays>
     <stackLimit>3</stackLimit>
     <stackedEffectMultiplier>0.2</stackedEffectMultiplier>
     <stages>
       <li>
-        <label>couldn't perform lovin'</label>
-        <description>I couldn't perform my marital duties. What else can this blasted colony take away from me?</description>
-        <baseMoodEffect>-10</baseMoodEffect>
-        <baseOpinionOffset>-5</baseOpinionOffset>
+        <label>had terribly lovin'</label>
+        <description>That was... terrible.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+        <baseOpinionOffset>-10</baseOpinionOffset>
       </li>
-    </stages>
-  </ThoughtDef>
-  
-  <ThoughtDef>
-    <defName>FailedLovinFemale</defName>
-    <thoughtClass>Thought_MemorySocial</thoughtClass>
-    <durationDays>1.0</durationDays>
-    <stackLimit>3</stackLimit>
-    <stackedEffectMultiplier>0.2</stackedEffectMultiplier>
-    <stages>
       <li>
-        <label>my spouse couldn't perform lovin'</label>
-        <description>I've told him it's ok.</description>
-        <baseMoodEffect>-5</baseMoodEffect>
+        <label>had bad lovin'</label>
+        <description>Hmmph. I may have to look for a better lover.</description>
+        <baseMoodEffect>-7</baseMoodEffect>
         <baseOpinionOffset>-5</baseOpinionOffset>
+      </li>
+      <li>
+        <label>had lovin'</label>
+        <description>That was... ok, I guess?.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+        <baseOpinionOffset>5</baseOpinionOffset>
+      </li>
+      <li>
+        <label>had amazing lovin'</label>
+        <description>Wow. That was amazing!</description>
+        <baseMoodEffect>25</baseMoodEffect>
+        <baseOpinionOffset>15</baseOpinionOffset>
       </li>
     </stages>
   </ThoughtDef>
-  
+    
 </ThoughtDefs>

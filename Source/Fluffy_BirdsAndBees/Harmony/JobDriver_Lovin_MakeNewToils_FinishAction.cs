@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Reflection;
 using Harmony;
 using RimWorld;
+using UnityEngine;
 using UnityEngine.Assertions;
 using Verse;
 using static Harmony.AccessTools;
@@ -57,28 +58,13 @@ namespace Fluffy_BirdsAndBees
             var ticksToNextLovin = genTicksToNextLovin.GetValue<int>( driver.pawn );
             Assert(ticksToNextLovin, "ticksToNextLovin"  );
 
-            // both this pawn and the partner will simultaneously perform the loving job, so we need a quasi random number that will be the same for both.
-            int seed = driver.pawn.RandSeedForHour(3) * partner.RandSeedForHour(6);
-            Rand.Seed = seed;
-            Assert( seed, "seed" );
+            var performanceLevel = LovinUtility.LovinLevel( driver.pawn, partner );
 
-            // succesful lovin
-            if (Rand.Value < driver.pawn.health.capacities.GetLevel(PawnCapacityDefOf.Reproduction))
-            {
-                Thought_Memory goodLovinMemory = (Thought_Memory)ThoughtMaker.MakeThought(RimWorld.ThoughtDefOf.GotSomeLovin);
-                // TODO: figure out where attraction is hiding in A16, and if we want to add it back in as a mood factor.
-                // goodLovinMemory.moodPowerFactor = Mathf.Max( driver.pawn.relations.AttractionTo( partner ), 0.1f );
-                driver.pawn.needs.mood.thoughts.memories.TryGainMemory(goodLovinMemory, partner);
-            }
-            // failed lovin
-            else
-            {
-                Thought_Memory badLovinMemory = driver.pawn.gender == Gender.Female
-                    ? (Thought_Memory)ThoughtMaker.MakeThought(ThoughtDefOf.FailedLovinFemale)
-                    : (Thought_Memory)ThoughtMaker.MakeThought(ThoughtDefOf.FailedLovinMale);
-                driver.pawn.needs.mood.thoughts.memories.TryGainMemory(badLovinMemory, partner);
-            }
+            // apply the thought
+            var thought = ThoughtMaker.MakeThought( ThoughtDefOf.LovinPerformance, performanceLevel );
+            driver.pawn.needs.mood.thoughts.memories.TryGainMemory( thought, partner );
 
+            // we're civilized, not bunnies.
             driver.pawn.mindState.canLovinTick = Find.TickManager.TicksGame + ticksToNextLovin;
 
             return false;
