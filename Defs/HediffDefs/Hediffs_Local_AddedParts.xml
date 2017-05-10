@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Added body parts -->
+    <HediffDef Name="AddedBodyPartBase" Abstract="True">
+        <hediffClass>Hediff_AddedPart</hediffClass>
+        <defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>SimpleProstheticReproductiveOrgans</defName>
+        <label>improvised reproductive organs</label>
+        <addedPartProps>
+            <isSolid>true</isSolid>
+            <partEfficiency>0.0</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+    
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>BionicReproductiveOrgans</defName>
+        <label>bionic reproductive organs</label>
+        <spawnThingOnRemoved>BionicReproductiveOrgans</spawnThingOnRemoved>
+        <addedPartProps>
+            <isBionic>true</isBionic>
+            <isSolid>true</isSolid>
+            <partEfficiency>1.4</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+</Defs>

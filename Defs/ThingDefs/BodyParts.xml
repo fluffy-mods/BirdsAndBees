@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BodyPartBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+			<Beauty>-4</Beauty>
+		</statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <tradeTags>
+      <li>BodyPartOrImplant</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <pathCost>10</pathCost>
+  </ThingDef>
+
+  <ThingDef ParentName="BodyPartBase" Name="BodyPartArtificialBase" Abstract="True">
+    <thingCategories>
+      <li>BodyPartsArtificial</li>
+    </thingCategories>
+		<statBases>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="BodyPartArtificialBase">
+    <defName>SimpleProstheticReproductiveOrgans</defName>
+    <label>simple prosthetic reproductive organs</label>
+    <description>Simple replacement parts, allow some facade of lovin`, but cannot restore fertility.</description>
+    <graphicData>
+      <texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>400</MarketValue>
+      <Mass>5</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BodyPartArtificialBase">
+    <defName>BionicReproductiveOrgans</defName>
+    <label>bionic reproductive organs</label>
+    <description>Provide phenominal stamina and boost fertility.</description>
+    <graphicData>
+      <texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <Mass>5</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+
+</ThingDefs>
+  
