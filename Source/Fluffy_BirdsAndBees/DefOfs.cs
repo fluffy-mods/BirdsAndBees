@@ -31,6 +31,8 @@ namespace Fluffy_BirdsAndBees
     {
         public static ThoughtDef FailedLovinMale;
         public static ThoughtDef FailedLovinFemale;
+        public static ThoughtDef SomeoneNeutered;
+        public static ThoughtDef Neutered;
     }
 
     [DefOf]

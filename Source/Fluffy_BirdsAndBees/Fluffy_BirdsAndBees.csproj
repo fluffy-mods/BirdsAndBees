@@ -65,6 +65,7 @@
     <Compile Include="Harmony\HediffGiver.cs" />
     <Compile Include="Harmony\_JobDriver_Lovin.cs" />
     <Compile Include="Harmony\PawnUtility.cs" />
+    <Compile Include="ThoughtWorker_Neutered.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

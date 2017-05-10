@@ -14,4 +14,54 @@
     </stages>
   </ThoughtDef>
 
+  <!--neutered & missing part (which are not the same!)-->
+  <ThoughtDef>
+    <defName>Neutered</defName>
+    <workerClass>Fluffy_BirdsAndBees.ThoughtWorker_Neutered</workerClass>
+    <stages>
+      <li>
+        <label>neutered</label>
+        <description>I am no longer able to have children. What is my purpose in life?</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>castrated</label>
+        <description>I feel incomplete.</description>
+        <baseMoodEffect>-25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SomeoneNeutered</defName>
+    <durationDays>3</durationDays>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stackedEffectMultiplier>0.25</stackedEffectMultiplier>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>criminal neutered</label>
+        <description>HE probably had it coming</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>prisoner neutered</label>
+        <description>A prisoner was neutered. Should we be treating our prisoners this way?</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>guest neutered</label>
+        <description>A guest was neutered. What did HE do to deserve this?</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>colonist neutered</label>
+        <description>A colonist was neutered. I'm afraid I'm next...</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
 </ThoughtDefs>
