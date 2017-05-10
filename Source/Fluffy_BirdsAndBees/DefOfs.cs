@@ -33,8 +33,15 @@ namespace Fluffy_BirdsAndBees
         public static ThoughtDef FailedLovinFemale;
     }
 
-    //internal static RecipeDef neuterRecipeDef = DefDatabase<RecipeDef>.GetNamed("Neuter");
+    [DefOf]
+    public class RecipeDefOf
+    {
+        public static RecipeDef Neuter;
+    }
 
-    //internal static HediffGiverSetDef fertilityHediffGiverSetDef =
-    //    DefDatabase<HediffGiverSetDef>.GetNamed("HumanoidFertility");
+    [DefOf]
+    public class HediffGiverSetDefOf
+    {
+        public static HediffGiverSetDef HumanoidFertility;
+    }
 }

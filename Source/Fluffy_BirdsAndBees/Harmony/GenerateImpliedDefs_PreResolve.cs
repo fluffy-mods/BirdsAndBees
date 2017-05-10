@@ -2,6 +2,7 @@
 // GenerateImpliedDefs_PreResolve.cs
 // 2017-05-09
 
+using System.Collections.Generic;
 using System.Linq;
 using Harmony;
 using RimWorld;
@@ -28,6 +29,18 @@ namespace Fluffy_BirdsAndBees
                 .Select(t => t.race.body)
                 .Distinct();
 
+            var humanoidRaces = fleshRaces.Where( td => td.race.Humanlike );
+
+            // insert neuter recipe
+            Debug( "Inject recipe" );
+            foreach ( ThingDef race in fleshRaces )
+            {
+                Debug(race.defName, 1);
+                if ( race.recipes.NullOrEmpty())
+                    race.recipes = new List<RecipeDef>();
+                race.recipes.Add( RecipeDefOf.Neuter );
+            }
+
             // insert reproductive parts
             Debug("Insert parts");
             foreach (BodyDef body in fleshBodies)
@@ -35,6 +48,16 @@ namespace Fluffy_BirdsAndBees
                 Debug(body.defName, 1);
                 // insert body part
                 body.corePart.parts.Add(New_ReproductiveOrgans);
+            }
+
+            // insert old-age hediffgivers
+            Debug("Insert hediffgiovers");
+            foreach ( ThingDef race in humanoidRaces )
+            {
+                Debug(race.defName, 1);
+                if ( race.race.hediffGiverSets.NullOrEmpty() )
+                    race.race.hediffGiverSets = new List<HediffGiverSetDef>();
+                race.race.hediffGiverSets.Add( HediffGiverSetDefOf.HumanoidFertility );
             }
         }
     }
