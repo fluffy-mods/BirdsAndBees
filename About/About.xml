@@ -3,14 +3,11 @@
   <name>The Birds and the Bees</name>
   <author>Fluffy</author>
   <url>https://ludeon.com/forums/index.php?topic=15964.0</url>
-  <targetVersion>0.17.1543</targetVersion>
+  <targetVersion>0.17.1546</targetVersion>
   <description>Adds reproductive organs to the animals, and then you, raiders and time can take them away again. 
 
-&lt;size=24&gt;Important&lt;/size&gt;
-&lt;b&gt;Requires HugsLib&lt;/b&gt; 
-
 &lt;b&gt;Does NOT require a new save game&lt;/b&gt; 
-This mod uses CCL to dynamically change game data* when a game is loaded. Should be fine to use with any other mod that adds animals, races, relations, or anything else. 
+Should be fine to use with any other mod that adds animals, races, relations, or anything else. However, you can’t remove the mod from a game.
 
 &lt;size=24&gt;Features&lt;/size&gt;
 Animals (including humanoids) require reproductive organs to mate &amp; and do lovin’. 
@@ -19,6 +16,9 @@ Animals (including humanoids) require reproductive organs to mate &amp; and do l
 Adds reproductive organs to fleshy pawns (e.g., animals and colonists). 
 Since reproductive organs are now a body part, they can be affected by external violence - including, but not limited to; gunfire, berserking colonists, frostbite, castration (neutering) and old age.
 Reworks mating &amp; lovin’ to take account of fertility stat. 
+
+&lt;size=24&gt;Powered by Harmony&lt;/size&gt;
+
 
 &lt;size=24&gt;Does this mod add the ability for colonists to have babies?&lt;/size&gt;
 &lt;i&gt;No. Nor will I ever add this, so don’t ask.&lt;/i&gt;

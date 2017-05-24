@@ -1,16 +1,16 @@
 Adds reproductive organs to the animals, and then you, raiders and time can take them away again. 
 
-# Important
-**Requires HugsLib** 
-
 **Does NOT require a new save game** 
-This mod uses CCL to dynamically change game data* when a game is loaded. Should be fine to use with any other mod that adds animals, races, relations, or anything else. 
+Should be fine to use with any other mod that adds animals, races, relations, or anything else. However, you can't remove the mod from a game.
 
 # Features
 Animals (including humanoids) require reproductive organs to mate & and do lovin'. 
 - Adds reproductive organs to fleshy pawns (e.g., animals and colonists). 
 - Since reproductive organs are now a body part, they can be affected by external violence - including, but not limited to; gunfire, berserking colonists, frostbite, castration (neutering) and old age.
 - Reworks mating & lovin' to take account of fertility stat. 
+
+# Powered by Harmony
+![Powered by Harmony](https://camo.githubusercontent.com/074bf079275fa90809f51b74e9dd0deccc70328f/68747470733a2f2f7332342e706f7374696d672e6f72672f3538626c31727a33392f6c6f676f2e706e67)
 
 # Does this mod add the ability for colonists to have babies?
 _No. Nor will I ever add this, so don't ask._
