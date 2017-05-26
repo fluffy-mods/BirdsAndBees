@@ -24,6 +24,7 @@ namespace Fluffy_BirdsAndBees
     {
         public static HediffDef Neutered;
         public static HediffDef Menopause;
+        public static HediffDef Impotence;
     }
 
     [DefOf]
