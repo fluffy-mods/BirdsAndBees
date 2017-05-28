@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿#if DEBUG
+//#define DEBUG_HARMONY
+#endif
+
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Harmony;
@@ -12,7 +16,11 @@ namespace Fluffy_BirdsAndBees
     {
         public Controller( ModContentPack content ) : base( content ) {
             // Harmony magic
+#if DEBUG_HARMONY
             HarmonyInstance.DEBUG = true;
+#endif
+
+
             var harmony = HarmonyInstance.Create("Fluffy.BirdsAndBees");
             // patches;
             // HediffGiver.TryApply()
