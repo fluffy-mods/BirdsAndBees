@@ -62,6 +62,9 @@ namespace Fluffy_BirdsAndBees
 
             // apply the thought
             var thought = ThoughtMaker.MakeThought( ThoughtDefOf.LovinPerformance, performanceLevel );
+            // note that we have to massage the thought a bit due to a bug in vanilla;
+            // https://ludeon.com/forums/index.php?topic=33052
+            ((Thought_MemorySocial)thought).opinionOffset = thought.CurStage.baseOpinionOffset;
             driver.pawn.needs.mood.thoughts.memories.TryGainMemory( thought, partner );
 
             // we're civilized, not bunnies.
