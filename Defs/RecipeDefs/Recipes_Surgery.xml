@@ -46,6 +46,7 @@
 		<description>Installs bionic reproductive organs.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing bionic reproductive organs.</jobString>
+		<hideBodyPartNames>true</hideBodyPartNames>
 		<workAmount>2000</workAmount>
 		<ingredients>
 			<li>
@@ -85,6 +86,7 @@
 		<description>Installs basic reproductive organs.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing basic reproductive organs.</jobString>
+		<hideBodyPartNames>true</hideBodyPartNames>
 		<workAmount>2000</workAmount>
 		<ingredients>
 			<li>
@@ -98,7 +100,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SimpleProstheticReproductiveOrgans</li>
+						<li>WoodLog</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -109,7 +111,7 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>SimpleProstheticReproductiveOrgans</li>
+				<li>WoodLog</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>

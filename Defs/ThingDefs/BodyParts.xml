@@ -34,23 +34,6 @@
   </ThingDef>
 
   <ThingDef ParentName="BodyPartArtificialBase">
-    <defName>SimpleProstheticReproductiveOrgans</defName>
-    <label>simple prosthetic reproductive organs</label>
-    <description>Simple replacement parts, allow some facade of lovin`, but cannot restore fertility.</description>
-    <graphicData>
-      <texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-      <MarketValue>400</MarketValue>
-      <Mass>5</Mass>
-    </statBases>
-    <techHediffsTags>
-      <li>Simple</li>
-    </techHediffsTags>
-  </ThingDef>
-
-  <ThingDef ParentName="BodyPartArtificialBase">
     <defName>BionicReproductiveOrgans</defName>
     <label>bionic reproductive organs</label>
     <description>Provide phenominal stamina and boost fertility.</description>

@@ -3,6 +3,7 @@
 <PawnCapacityDefs>
   <!-- todo: pawnCapacityDef override with custom labeller for male/female -->
   <PawnCapacityDef>
+    <workerClass>Fluffy_BirdsAndBees.PawnCapacityWorker_Fertility</workerClass>
     <defName>Reproduction</defName>
     <label>fertility</label>
     <listOrder>200</listOrder>

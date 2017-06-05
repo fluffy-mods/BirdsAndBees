@@ -8,7 +8,6 @@ using Verse;
 namespace Fluffy_BirdsAndBees
 {
     public class PawnCapacityWorker_Fertility : PawnCapacityWorker
-
     {
         public override float CalculateCapacityLevel( HediffSet diffSet,
                                                       List<PawnCapacityUtility.CapacityImpactor> impactors = null )
