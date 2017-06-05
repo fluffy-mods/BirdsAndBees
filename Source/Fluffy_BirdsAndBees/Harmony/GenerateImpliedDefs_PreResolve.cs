@@ -39,8 +39,6 @@ namespace Fluffy_BirdsAndBees
                 if ( race.recipes.NullOrEmpty() )
                     race.recipes = new List<RecipeDef>();
                 race.recipes.Add( RecipeDefOf.Neuter );
-                race.recipes.Add( RecipeDefOf.InstallBasicReproductiveOrgans );
-                race.recipes.Add( RecipeDefOf.InstallBionicReproductiveOrgans );
             }
 
             // insert reproductive parts
@@ -60,6 +58,10 @@ namespace Fluffy_BirdsAndBees
                 if ( race.race.hediffGiverSets.NullOrEmpty() )
                     race.race.hediffGiverSets = new List<HediffGiverSetDef>();
                 race.race.hediffGiverSets.Add( HediffGiverSetDefOf.HumanoidFertility );
+
+                // should we apply the recipe to animals as well?
+                race.recipes.Add(RecipeDefOf.InstallBasicReproductiveOrgans);
+                race.recipes.Add(RecipeDefOf.InstallBionicReproductiveOrgans);
             }
         }
     }
