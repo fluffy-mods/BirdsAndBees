@@ -8,8 +8,10 @@
     <oldInjuryBaseChance>0.04</oldInjuryBaseChance>
     <bleedingRateMultiplier>1.5</bleedingRateMultiplier>
     <skinCovered>true</skinCovered>
-    <frostbiteVulnerability>1</frostbiteVulnerability>
+    <frostbiteVulnerability>3</frostbiteVulnerability>
     <dontSuggestAmputation>true</dontSuggestAmputation>
+    <tags>
+      <li>FertilitySource</li>
+    </tags>
   </BodyPartDef>
-
 </Defs>
