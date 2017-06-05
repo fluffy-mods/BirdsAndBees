@@ -31,14 +31,16 @@ namespace Fluffy_BirdsAndBees
 
             var humanoidRaces = fleshRaces.Where( td => td.race.Humanlike );
 
-            // insert neuter recipe
+            // insert neuter and implant recipes
             Debug( "Inject recipe" );
             foreach ( ThingDef race in fleshRaces )
             {
-                Debug(race.defName, 1);
-                if ( race.recipes.NullOrEmpty())
+                Debug( race.defName, 1 );
+                if ( race.recipes.NullOrEmpty() )
                     race.recipes = new List<RecipeDef>();
                 race.recipes.Add( RecipeDefOf.Neuter );
+                race.recipes.Add( RecipeDefOf.InstallBasicReproductiveOrgans );
+                race.recipes.Add( RecipeDefOf.InstallBionicReproductiveOrgans );
             }
 
             // insert reproductive parts
@@ -51,7 +53,7 @@ namespace Fluffy_BirdsAndBees
             }
 
             // insert old-age hediffgivers
-            Debug("Insert hediffgiovers");
+            Debug("Insert hediffgivers");
             foreach ( ThingDef race in humanoidRaces )
             {
                 Debug(race.defName, 1);

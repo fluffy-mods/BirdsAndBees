@@ -39,6 +39,8 @@ namespace Fluffy_BirdsAndBees
     public class RecipeDefOf
     {
         public static RecipeDef Neuter;
+        public static RecipeDef InstallBasicReproductiveOrgans;
+        public static RecipeDef InstallBionicReproductiveOrgans;
     }
 
     [DefOf]
