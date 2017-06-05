@@ -7,6 +7,9 @@
       <li Class="Fluffy_BirdsAndBees.HediffGiver_Birthday_Gender">
         <hediff>Impotence</hediff>
         <gender>Male</gender>
+        <partsToAffect>
+          <li>ReproductiveOrgans</li>
+        </partsToAffect>
         <ageFractionChanceCurve>
           <points>
             <li>(0.5, 0.0)</li>
@@ -22,6 +25,9 @@
       <li Class="Fluffy_BirdsAndBees.HediffGiver_Birthday_Gender">
         <hediff>Menopause</hediff>
         <gender>Female</gender>
+        <partsToAffect>
+          <li>ReproductiveOrgans</li>
+        </partsToAffect>
         <ageFractionChanceCurve>
           <points>
             <li>(0.4, 0.0)</li>
