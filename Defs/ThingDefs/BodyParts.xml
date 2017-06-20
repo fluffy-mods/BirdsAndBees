@@ -36,7 +36,7 @@
   <ThingDef ParentName="BodyPartArtificialBase">
     <defName>BionicReproductiveOrgans</defName>
     <label>bionic reproductive organs</label>
-    <description>Provide phenominal stamina and boost fertility.</description>
+    <description>Provide phenomenal stamina and boost fertility.</description>
     <graphicData>
       <texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
       <graphicClass>Graphic_Single</graphicClass>
