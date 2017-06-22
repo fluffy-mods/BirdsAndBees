@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- random, lasts an hour, only applies to females in hormonal stage of menopause -->
+
+  <HotFlash.stages.0.label>燥热</HotFlash.stages.0.label>
+  <HotFlash.stages.0.description>现在我感觉非常热。</HotFlash.stages.0.description>
+
+
+  <!-- neutered & missing part (which are not the same!) -->
+
+  <Neutered.stages.0.label>绝育</Neutered.stages.0.label>
+  <Neutered.stages.0.description>我已经不能有孩子了。我还有生活目标吗？</Neutered.stages.0.description>
+  <Neutered.stages.1.label>阉割</Neutered.stages.1.label>
+  <Neutered.stages.1.description>我现在是个废人。</Neutered.stages.1.description>
+
+  <SomeoneNeutered.stages.0.label>罪犯被绝育</SomeoneNeutered.stages.0.label>
+  <SomeoneNeutered.stages.0.description>HE大概算是活该吧。</SomeoneNeutered.stages.0.description>
+  <SomeoneNeutered.stages.1.label>囚犯被绝育</SomeoneNeutered.stages.1.label>
+  <SomeoneNeutered.stages.1.description>一名囚犯被绝育了。我们真的应该这样对待囚犯吗？</SomeoneNeutered.stages.1.description>
+  <SomeoneNeutered.stages.2.label>访客被绝育</SomeoneNeutered.stages.2.label>
+  <SomeoneNeutered.stages.2.description>一名访客被绝育了。HE做了什么要遭这种罪？</SomeoneNeutered.stages.2.description>
+  <SomeoneNeutered.stages.3.label>殖民者被绝育</SomeoneNeutered.stages.3.label>
+  <SomeoneNeutered.stages.3.description>一名殖民者被绝育了。我怕我是下一个……</SomeoneNeutered.stages.3.description>
+
+
+</LanguageData>
