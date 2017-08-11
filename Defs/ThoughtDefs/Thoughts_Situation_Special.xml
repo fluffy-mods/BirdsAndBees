@@ -21,12 +21,12 @@
     <stages>
       <li>
         <label>neutered</label>
-        <description>I am no longer able to have children. What is my purpose in life?</description>
+        <description>I feel incomplete.</description>
         <baseMoodEffect>-10</baseMoodEffect>
       </li>
       <li>
         <label>castrated</label>
-        <description>I feel incomplete.</description>
+        <description>I was castrated without my consent. Is there no justice in this world?</description>
         <baseMoodEffect>-25</baseMoodEffect>
       </li>
     </stages>
