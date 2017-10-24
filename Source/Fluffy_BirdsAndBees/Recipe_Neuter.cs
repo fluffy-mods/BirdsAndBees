@@ -17,12 +17,13 @@ namespace Fluffy_BirdsAndBees
                 yield return pawn.ReproductiveOrgans();
         }
 
-        public override void ApplyOnPawn( Pawn pawn, BodyPartRecord part, Pawn billDoer, List<Thing> ingredients )
+        // TODO: Verify working for A18 (added bill argument)
+        public override void ApplyOnPawn( Pawn pawn, BodyPartRecord part, Pawn billDoer, List<Thing> ingredients, Bill bill )
         {
             Debug( "ApplyOnPawn" );
             if ( billDoer != null )
             {
-                if ( CheckSurgeryFail( billDoer, pawn, ingredients, pawn.ReproductiveOrgans() ) )
+                if ( CheckSurgeryFail( billDoer, pawn, ingredients, pawn.ReproductiveOrgans(), bill ) )
                     return;
                 TaleRecorder.RecordTale( TaleDefOf.DidSurgery, billDoer, pawn );
             }
@@ -38,7 +39,7 @@ namespace Fluffy_BirdsAndBees
                 return;
 
             int stage;
-
+            
             // should we really be doing this?
             if ( victim.IsColonist )
                 stage = 3;
