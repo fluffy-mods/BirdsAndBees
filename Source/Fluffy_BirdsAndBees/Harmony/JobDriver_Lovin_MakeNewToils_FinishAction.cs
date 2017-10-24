@@ -17,9 +17,9 @@ namespace Fluffy_BirdsAndBees
     [HarmonyPatch]
     public static class JobDriver_Lovin_MakeNewToils_FinishAction
     {
-        public const string ITERATOR_NAME = "<MakeNewToils>c__Iterator32";
-        public const string FINISH_ACTION_NAME = "<>m__92";
-        public const string DRIVER_FIELD_NAME = "<>f__this";
+        public const string ITERATOR_NAME = "<MakeNewToils>c__Iterator0";
+        public const string FINISH_ACTION_NAME = "<>m__4";
+        public const string DRIVER_FIELD_NAME = "$this";
 
         static MethodInfo TargetMethod()
         {

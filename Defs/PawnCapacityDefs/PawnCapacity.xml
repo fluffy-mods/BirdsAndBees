@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
-<PawnCapacityDefs>
+<Defs>
   <!-- todo: pawnCapacityDef override with custom labeller for male/female -->
   <PawnCapacityDef>
     <workerClass>Fluffy_BirdsAndBees.PawnCapacityWorker_Fertility</workerClass>
@@ -11,4 +11,4 @@
     <showOnMechanoids>false</showOnMechanoids>
   </PawnCapacityDef>
 
-</PawnCapacityDefs>
+</Defs>

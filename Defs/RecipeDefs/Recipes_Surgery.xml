@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<RecipeDefs>
+<Defs>
 
 	<RecipeDef Abstract="True" Name="SurgeryFlesh">
 		<effectWorking>Surgery</effectWorking>
@@ -120,4 +120,4 @@
 		<addsHediff>SimpleProstheticReproductiveOrgans</addsHediff>
 	</RecipeDef>
 
-</RecipeDefs>
+</Defs>
