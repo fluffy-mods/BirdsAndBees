@@ -65,7 +65,7 @@
       <li Class="HediffCompProperties_Immunizable">
         <compClass>HediffComp_Immunizable</compClass>
         <!-- to 100% over a period of 5 years, 12 months per year, 5 days per month, 300 days -->
-        <severityPerDayNotImmune>0.00333</severityPerDayNotImmune>
+        <severityPerDayNotImmune>0.00167</severityPerDayNotImmune>
       </li>
     </comps>
     <stages>
@@ -80,7 +80,7 @@
       </li>
       <li>
         <label>hormonal</label>
-        <minSeverity>0.2</minSeverity>
+        <minSeverity>0.4</minSeverity>
         <capMods>
           <li>
             <capacity>Reproduction</capacity>
@@ -89,7 +89,7 @@
         </capMods>
       </li>
       <li>
-        <minSeverity>0.4</minSeverity>
+        <minSeverity>0.8</minSeverity>
         <capMods>
           <li>
             <capacity>Reproduction</capacity>
