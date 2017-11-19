@@ -3,7 +3,7 @@
   <name>The Birds and the Bees</name>
   <author>Fluffy</author>
   <url>https://ludeon.com/forums/index.php?topic=15964.0</url>
-  <targetVersion>0.18.1704</targetVersion>
+  <targetVersion>0.18.1722</targetVersion>
   <description>Adds reproductive organs to the animals, and then you, raiders and time can take them away again. 
 
 &lt;b&gt;Does NOT require a new save game&lt;/b&gt; 
@@ -16,6 +16,11 @@ Animals (including humanoids) require reproductive organs to mate &amp; and do l
 Adds reproductive organs to fleshy pawns (e.g., animals and colonists). 
 Since reproductive organs are now a body part, they can be affected by external violence - including, but not limited to; gunfire, berserking colonists, frostbite, castration (neutering) and old age.
 Reworks mating &amp; lovin’ to take account of fertility stat. 
+Adds old age diseases related to fertility (menopause, infertility) that can affect both fertility and mood.
+
+&lt;size=24&gt;Known issues&lt;/size&gt;
+
+Neutering always requires medicine. This is a vanilla thing (the same thing happens with euthanasia), and I’ve not had the time to trace it down and fix it. Pull requests welcome!
 
 &lt;size=24&gt;Powered by Harmony&lt;/size&gt;
 
@@ -39,7 +44,7 @@ kouyou:    Japanese translation
 Duduluu:    Chinese translations
 
 &lt;size=24&gt;Version&lt;/size&gt;
-This is version v0.18.0.2
+This is version v0.18.1.0
 
 </description>
 </ModMetaData>

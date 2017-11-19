@@ -10,6 +10,10 @@ Animals (including humanoids) require reproductive organs to mate & and do lovin
 - Adds reproductive organs to fleshy pawns (e.g., animals and colonists). 
 - Since reproductive organs are now a body part, they can be affected by external violence - including, but not limited to; gunfire, berserking colonists, frostbite, castration (neutering) and old age.
 - Reworks mating & lovin' to take account of fertility stat. 
+- Adds old age diseases related to fertility (menopause, infertility) that can affect both fertility and mood.
+
+# Known issues
+- Neutering always requires medicine. This is a vanilla thing (the same thing happens with euthanasia), and I've not had the time to trace it down and fix it. Pull requests welcome!
 
 # Powered by Harmony
 ![Powered by Harmony](https://camo.githubusercontent.com/074bf079275fa90809f51b74e9dd0deccc70328f/68747470733a2f2f7332342e706f7374696d672e6f72672f3538626c31727a33392f6c6f676f2e706e67)
@@ -50,4 +54,4 @@ Show your appreciation by buying me a coffee (or contribute towards a nice singl
 [![Buy Me a Coffee](http://i.imgur.com/EjWiUwx.gif)](https://ko-fi.com/fluffymods)
 
 # Version
-This is version v0.18.0.2
+This is version v0.18.1.0
