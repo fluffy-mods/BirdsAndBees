@@ -11,7 +11,7 @@
         <defName>SimpleProstheticReproductiveOrgans</defName>
         <label>improvised reproductive organs</label>
         <addedPartProps>
-            <isSolid>true</isSolid>
+            <solid>true</solid>
             <partEfficiency>0.0</partEfficiency>
         </addedPartProps>
     </HediffDef>
@@ -21,8 +21,7 @@
         <label>bionic reproductive organs</label>
         <spawnThingOnRemoved>BionicReproductiveOrgans</spawnThingOnRemoved>
         <addedPartProps>
-            <isBionic>true</isBionic>
-            <isSolid>true</isSolid>
+            <solid>true</solid>
             <partEfficiency>1.4</partEfficiency>
         </addedPartProps>
     </HediffDef>

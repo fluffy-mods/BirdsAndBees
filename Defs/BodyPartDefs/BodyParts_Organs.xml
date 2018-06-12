@@ -5,11 +5,11 @@
     <defName>ReproductiveOrgans</defName>
     <label>reproductive organs</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>0.04</oldInjuryBaseChance>
-    <bleedingRateMultiplier>1.5</bleedingRateMultiplier>
+    <permanentInjuryBaseChance>0.04</permanentInjuryBaseChance>
+    <bleedRate>1.5</bleedRate>
     <skinCovered>true</skinCovered>
     <frostbiteVulnerability>3</frostbiteVulnerability>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
     <tags>
       <li>FertilitySource</li>
     </tags>
