@@ -53,9 +53,7 @@ namespace Fluffy_BirdsAndBees
                 stage = 0;
 
             foreach (
-                Pawn pawn in
-                PawnsFinder.AllMapsCaravansAndTravelingTransportPods.Where( p => p.IsColonist || p.IsPrisonerOfColony )
-            )
+                Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_FreeColonistsAndPrisoners_NoCryptosleep )
                 pawn.needs.mood.thoughts.memories.TryGainMemory( ThoughtMaker.MakeThought( ThoughtDefOf.SomeoneNeutered, stage ) );
         }
     }

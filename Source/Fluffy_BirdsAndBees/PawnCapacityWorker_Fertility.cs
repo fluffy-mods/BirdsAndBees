@@ -12,10 +12,18 @@ namespace Fluffy_BirdsAndBees
         public override float CalculateCapacityLevel( HediffSet diffSet,
                                                       List<PawnCapacityUtility.CapacityImpactor> impactors = null )
         {
-            return PawnCapacityUtility.CalculateTagEfficiency( diffSet, "FertilitySource", 3.40282347E+38f, impactors );
+            return PawnCapacityUtility.CalculateTagEfficiency( 
+                diffSet, 
+                BodyPartTagDefOf.FertilitySource, 
+                3.40282347E+38f, 
+                default( FloatRange ),
+                impactors );
         }
 
-        public override bool CanHaveCapacity( BodyDef body ) { return body.HasPartWithTag("FertilitySource"); }
+        public override bool CanHaveCapacity( BodyDef body )
+        {
+            return body.HasPartWithTag(BodyPartTagDefOf.FertilitySource);
+        }
     }
 }
 

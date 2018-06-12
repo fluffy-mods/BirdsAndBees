@@ -10,7 +10,7 @@ namespace Fluffy_BirdsAndBees
     {
         protected override ThoughtState CurrentStateInternal( Pawn p )
         {
-            Debug( "ThoughtWorker_HotFlash.CurrentStateInternal(" + p.NameStringShort + ")"  );
+            Debug( "ThoughtWorker_HotFlash.CurrentStateInternal(" + p.Name.ToStringShort + ")"  );
             // only applies to females in the hormonal state of menopause
             if ( p.gender != Gender.Female
                  || p.health.hediffSet.GetFirstHediffOfDef( HediffDefOf.Menopause )?.CurStageIndex != 1 )

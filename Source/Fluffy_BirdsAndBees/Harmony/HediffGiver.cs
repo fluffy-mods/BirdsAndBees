@@ -14,7 +14,7 @@ namespace Fluffy_BirdsAndBees
         static bool Prefix( HediffGiver __instance, ref bool __result, Pawn pawn )
         {
             // if the instance is of gendered type, check pawn gender before applying.
-            Debug( "HediffGiver.TryApply(" + __instance.hediff.defName + ", " + pawn.NameStringShort + " [" +
+            Debug( "HediffGiver.TryApply(" + __instance.hediff.defName + ", " + pawn.Name.ToStringShort + " [" +
                              pawn.gender + "])" );
             HediffGiver_Birthday_Gender gendered = __instance as HediffGiver_Birthday_Gender;
             if ( gendered != null && gendered.gender != pawn.gender )

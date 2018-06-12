@@ -48,4 +48,10 @@ namespace Fluffy_BirdsAndBees
     {
         public static HediffGiverSetDef HumanoidFertility;
     }
+
+    [DefOf]
+    public class BodyPartTagDefOf
+    {
+        public static BodyPartTagDef FertilitySource;
+    }
 }

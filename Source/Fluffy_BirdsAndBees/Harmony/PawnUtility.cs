@@ -14,12 +14,12 @@ namespace Fluffy_BirdsAndBees
         {
             if ( !female.health.capacities.CapableOf( PawnCapacityDefOf.Reproduction ) ) // add fertility check
             {
-                Debug( $"{female.NameStringShort} is NOT FERTILE"  );
+                Debug( $"{female.Name.ToStringShort} is NOT FERTILE"  );
                 __result = false; // return false from PawnUtility.FertileMateTarget
                 return false; // stop further execution
             }
 
-            Debug($"{female.NameStringShort} is FERTILE");
+            Debug($"{female.Name.ToStringShort} is FERTILE");
             return true; // let PawnUtility.FertileMateTarget() execute
         }
     }
@@ -34,11 +34,11 @@ namespace Fluffy_BirdsAndBees
             if ( male.health.capacities.GetLevel(PawnCapacityDefOf.Reproduction) *
                  female.health.capacities.GetLevel(PawnCapacityDefOf.Reproduction) < Rand.Value )
             {
-                Debug( $"{male.NameStringShort} and {female.NameStringShort} FAILED fertility check" );
+                Debug( $"{male.Name.ToStringShort} and {female.Name.ToStringShort} FAILED fertility check" );
                 return false;
             }
 
-            Debug( $"{male.NameStringShort} and {female.NameStringShort} PASSED fertility check" );
+            Debug( $"{male.Name.ToStringShort} and {female.Name.ToStringShort} PASSED fertility check" );
             return true;
         }
     }
