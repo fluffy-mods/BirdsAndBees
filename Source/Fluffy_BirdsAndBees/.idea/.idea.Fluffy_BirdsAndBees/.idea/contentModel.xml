@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Karel\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Fluffy_BirdsAndBees.-299802689.00" t="ExcludeRecursive" />
+    <e p="D:\NextCloud\Other\RW_Mods\Fluffy Mods\BirdsAndBees\Assemblies" t="ExcludeRecursive" />
+    <e p="D:\NextCloud\Other\RW_Mods\Fluffy Mods\BirdsAndBees\Source\Fluffy_BirdsAndBees" t="IncludeRecursive">
+      <e p="Controller.cs" t="Include" />
+      <e p="DefOfs.cs" t="Include" />
+      <e p="Fluffy_BirdsAndBees.csproj" t="IncludeRecursive" />
+      <e p="Fluffy_BirdsAndBees.sln" t="IncludeFlat" />
+      <e p="Harmony" t="Include">
+        <e p="Debug.cs" t="Include" />
+        <e p="GenerateImpliedDefs_PreResolve.cs" t="Include" />
+        <e p="HediffGiver.cs" t="Include" />
+        <e p="JobDriver_Lovin_MakeNewToils_FinishAction.cs" t="Include" />
+        <e p="JobGiver_DoLovin.cs" t="Include" />
+        <e p="JobGiver_Mate.cs" t="Include" />
+        <e p="PawnUtility.cs" t="Include" />
+      </e>
+      <e p="HediffGiver_Birthday_Gender.cs" t="Include" />
+      <e p="LovinUtility.cs" t="Include" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="PawnCapacityWorker_Fertility.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+      <e p="Recipe_Neuter.cs" t="Include" />
+      <e p="Resources.cs" t="Include" />
+      <e p="ThoughtWorker_HotFlash.cs" t="Include" />
+      <e p="ThoughtWorker_Neutered.cs" t="Include" />
+    </e>
+  </component>
+</project>
