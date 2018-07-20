@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="027d8c66-d478-42fb-88d8-824aeb5dbe44" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../../Assemblies/Fluffy_BirdsAndBees.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assemblies/Fluffy_BirdsAndBees.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Harmony/HediffGiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Harmony/HediffGiver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fluffy_BirdsAndBees/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fluffy_BirdsAndBees/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluffy_BirdsAndBees.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Fluffy_BirdsAndBees.csproj" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/Harmony/HediffGiver.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding>
                 <marker date="1528834380196" expanded="false" signature="6:140" ph="..." />
                 <marker date="1528834380196" expanded="true" signature="171:1193" ph="{...}" />
@@ -140,14 +140,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Recipe_Neuter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ThoughtWorker_HotFlash.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HediffGiver_Birthday_Gender.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Harmony/HediffGiver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ThoughtWorker_HotFlash.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DefOfs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Recipe_Neuter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Harmony/PawnUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Properties/AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Harmony/HediffGiver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Harmony/PawnUtility.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PawnCapacityWorker_Fertility.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DefOfs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PawnCapacityWorker_Fertility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HediffGiver_Birthday_Gender.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -161,7 +161,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1273" />
     <option name="y" value="40" />
     <option name="width" value="1294" />
@@ -192,7 +192,14 @@
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="Fluffy_BirdsAndBees (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Fluffy_BirdsAndBees" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Harmony" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="References" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Fluffy_BirdsAndBees (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Fluffy_BirdsAndBees" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="References" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assemblies" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -205,7 +212,7 @@
   <component name="PropertiesComponent">
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ColonyManager/Source/Manager.sln" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Blueprints/Source/Blueprints/Blueprints.sln" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -234,6 +241,7 @@
       <updated>1528829853495</updated>
       <workItem from="1528829857669" duration="1900000" />
       <workItem from="1528834159850" duration="830000" />
+      <workItem from="1532120782772" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary="initial 1.0 update">
       <created>1528830540574</created>
@@ -253,7 +261,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2730000" />
+    <option name="totallyTimeSpent" value="2767000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -265,8 +273,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1273" y="40" width="1294" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="32" width="2576" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
@@ -277,7 +284,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="NuGet" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1726094" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08585056" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="7" />
       <window_info anchor="right" id="Database" order="3" />
@@ -303,6 +310,111 @@
     <option name="LAST_COMMIT_MESSAGE" value="fix defs, add craftable bionic replacement" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Harmony/HediffGiver.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding>
+            <marker date="1528834380196" expanded="false" signature="6:140" ph="..." />
+            <marker date="1528834380196" expanded="true" signature="171:1193" ph="{...}" />
+            <marker date="1528834380196" expanded="true" signature="288:1191" ph="{...}" />
+            <marker date="1528834380196" expanded="true" signature="377:1185" ph="{...}" />
+            <marker date="1528834380196" expanded="true" signature="400:746" ph="/* if the instance is of gendered type, check pawn gender before applying. ... */" />
+            <marker date="1528834380196" expanded="true" signature="910:1058" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Harmony/PawnUtility.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <marker date="1528829952805" expanded="false" signature="6:106" ph="..." />
+            <marker date="1528829952805" expanded="true" signature="272:854" ph="{...}" />
+            <marker date="1528829952805" expanded="true" signature="339:848" ph="{...}" />
+            <marker date="1528829952805" expanded="true" signature="461:703" ph="{...}" />
+            <marker date="1528829952805" expanded="true" signature="958:1603" ph="{...}" />
+            <marker date="1528829952805" expanded="true" signature="1017:1597" ph="{...}" />
+            <marker date="1528829952805" expanded="true" signature="1287:1455" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PawnCapacityWorker_Fertility.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <marker date="1528830347396" expanded="true" signature="0:64" ph="/* Karel Kroeze ... */" />
+            <marker date="1528830347396" expanded="false" signature="72:112" ph="..." />
+            <marker date="1528830347396" expanded="true" signature="143:834" ph="{...}" />
+            <marker date="1528830347396" expanded="true" signature="212:832" ph="{...}" />
+            <marker date="1528830347396" expanded="true" signature="407:670" ph="{...}" />
+            <marker date="1528830347396" expanded="true" signature="732:826" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recipe_Neuter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+          <folding>
+            <marker date="1528830424437" expanded="false" signature="6:144" ph="..." />
+            <marker date="1528830424437" expanded="true" signature="175:2087" ph="{...}" />
+            <marker date="1528830424437" expanded="true" signature="225:2085" ph="{...}" />
+            <marker date="1528830424437" expanded="true" signature="333:595" ph="{...}" />
+            <marker date="1528830424437" expanded="true" signature="784:1235" ph="{...}" />
+            <marker date="1528830424437" expanded="true" signature="866:1107" ph="{...}" />
+            <marker date="1528830424437" expanded="true" signature="1299:2079" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThoughtWorker_HotFlash.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <marker date="1528830434685" expanded="false" signature="6:105" ph="..." />
+            <marker date="1528830434685" expanded="true" signature="136:1221" ph="{...}" />
+            <marker date="1528830434685" expanded="true" signature="194:1219" ph="{...}" />
+            <marker date="1528830434685" expanded="true" signature="271:1213" ph="{...}" />
+            <marker date="1528830434685" expanded="true" signature="675:855" ph="/* lasts an hour, for on average an hour per day. ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HediffGiver_Birthday_Gender.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1483478771000" expanded="false" signature="6:47" ph="..." />
+            <marker date="1483478771000" expanded="true" signature="78:208" ph="{...}" />
+            <marker date="1483478771000" expanded="true" signature="148:206" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DefOfs.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="54" column="53" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
+          <folding>
+            <marker date="1528830214162" expanded="true" signature="0:42" ph="/* Karel Kroeze ... */" />
+            <marker date="1528830214162" expanded="false" signature="50:72" ph="..." />
+            <marker date="1528830214162" expanded="true" signature="148:214" ph="{...}" />
+            <marker date="1528830214162" expanded="true" signature="262:326" ph="{...}" />
+            <marker date="1528830214162" expanded="true" signature="368:508" ph="{...}" />
+            <marker date="1528830214162" expanded="true" signature="551:707" ph="{...}" />
+            <marker date="1528830214162" expanded="true" signature="749:930" ph="{...}" />
+            <marker date="1528830214162" expanded="true" signature="980:1051" ph="{...}" />
+            <marker date="1528830214162" expanded="true" signature="1098:1164" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Harmony/HediffGiver.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -490,7 +602,7 @@
     <entry file="file://$PROJECT_DIR$/Harmony/HediffGiver.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding>
             <marker date="1528834380196" expanded="false" signature="6:140" ph="..." />
             <marker date="1528834380196" expanded="true" signature="171:1193" ph="{...}" />

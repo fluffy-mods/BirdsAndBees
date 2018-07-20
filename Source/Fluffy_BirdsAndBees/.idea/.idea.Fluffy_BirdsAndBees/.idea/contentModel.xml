@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Karel\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Fluffy_BirdsAndBees.-299802689.00" t="ExcludeRecursive" />
-    <e p="D:\NextCloud\Other\RW_Mods\Fluffy Mods\BirdsAndBees\Assemblies" t="ExcludeRecursive" />
-    <e p="D:\NextCloud\Other\RW_Mods\Fluffy Mods\BirdsAndBees\Source\Fluffy_BirdsAndBees" t="IncludeRecursive">
+    <e p="C:\Users\Karel\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Fluffy_BirdsAndBees.-835298575.00" t="ExcludeRecursive" />
+    <e p="D:\Dropbox\Mods\Fluffy Mods\BirdsAndBees\Assemblies" t="ExcludeRecursive" />
+    <e p="D:\Dropbox\Mods\Fluffy Mods\BirdsAndBees\Source\Fluffy_BirdsAndBees" t="IncludeRecursive">
       <e p="Controller.cs" t="Include" />
       <e p="DefOfs.cs" t="Include" />
       <e p="Fluffy_BirdsAndBees.csproj" t="IncludeRecursive" />
