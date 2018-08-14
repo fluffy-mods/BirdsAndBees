@@ -16,7 +16,7 @@ namespace Fluffy_BirdsAndBees
         static bool Prefix( Pawn pawn, ref Job __result )
         {
             // not fertile, won't mate.
-            if ( !pawn.health.capacities.CapableOf( PawnCapacityDefOf.Reproduction ) )
+            if ( !pawn.health.capacities.CapableOf( PawnCapacityDefOf.Fertility ) )
             {
                 Debug( $"{pawn.LabelShort} is incapable of reproduction"  );
                 __result = null;

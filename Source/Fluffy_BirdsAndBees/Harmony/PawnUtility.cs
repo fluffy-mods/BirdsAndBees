@@ -12,7 +12,7 @@ namespace Fluffy_BirdsAndBees
     {
         static bool Prefix( ref bool __result, Pawn female )
         {
-            if ( !female.health.capacities.CapableOf( PawnCapacityDefOf.Reproduction ) ) // add fertility check
+            if ( !female.health.capacities.CapableOf( PawnCapacityDefOf.Fertility ) ) // add fertility check
             {
                 Debug( $"{female.Name.ToStringShort} is NOT FERTILE"  );
                 __result = false; // return false from PawnUtility.FertileMateTarget
@@ -31,8 +31,8 @@ namespace Fluffy_BirdsAndBees
         static bool Prefix( Pawn male, Pawn female )
         {
             // add fertility chance check (male.fertility * female.fertility).
-            if ( male.health.capacities.GetLevel(PawnCapacityDefOf.Reproduction) *
-                 female.health.capacities.GetLevel(PawnCapacityDefOf.Reproduction) < Rand.Value )
+            if ( male.health.capacities.GetLevel(PawnCapacityDefOf.Fertility) *
+                 female.health.capacities.GetLevel(PawnCapacityDefOf.Fertility) < Rand.Value )
             {
                 Debug( $"{male.Name.ToStringShort} and {female.Name.ToStringShort} FAILED fertility check" );
                 return false;

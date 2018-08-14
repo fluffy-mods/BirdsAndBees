@@ -5,7 +5,6 @@
     <defName>ReproductiveOrgans</defName>
     <label>reproductive organs</label>
     <hitPoints>10</hitPoints>
-    <permanentInjuryBaseChance>0.04</permanentInjuryBaseChance>
     <bleedRate>1.5</bleedRate>
     <skinCovered>true</skinCovered>
     <frostbiteVulnerability>3</frostbiteVulnerability>

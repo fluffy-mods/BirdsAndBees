@@ -21,7 +21,7 @@
         <label>onset</label>
         <capMods>
           <li>
-            <capacity>Reproduction</capacity>
+            <capacity>Fertility</capacity>
             <offset>-0.05</offset>
           </li>
         </capMods>
@@ -31,7 +31,7 @@
         <minSeverity>0.3</minSeverity>
         <capMods>
           <li>
-            <capacity>Reproduction</capacity>
+            <capacity>Fertility</capacity>
             <offset>-0.20</offset>
           </li>
         </capMods>
@@ -41,7 +41,7 @@
         <minSeverity>0.45</minSeverity>
         <capMods>
           <li>
-            <capacity>Reproduction</capacity>
+            <capacity>Fertility</capacity>
             <offset>-0.50</offset>
           </li>
         </capMods>
@@ -50,7 +50,7 @@
         <minSeverity>0.7</minSeverity>
         <capMods>
           <li>
-            <capacity>Reproduction</capacity>
+            <capacity>Fertility</capacity>
             <setMax>0</setMax>
           </li>
         </capMods>
@@ -73,7 +73,7 @@
         <label>onset</label>
         <capMods>
           <li>
-            <capacity>Reproduction</capacity>
+            <capacity>Fertility</capacity>
             <offset>-0.05</offset>
           </li>
         </capMods>
@@ -83,7 +83,7 @@
         <minSeverity>0.4</minSeverity>
         <capMods>
           <li>
-            <capacity>Reproduction</capacity>
+            <capacity>Fertility</capacity>
             <offset>-0.20</offset>
           </li>
         </capMods>
@@ -92,7 +92,7 @@
         <minSeverity>0.8</minSeverity>
         <capMods>
           <li>
-            <capacity>Reproduction</capacity>
+            <capacity>Fertility</capacity>
             <setMax>0</setMax>
           </li>
         </capMods>

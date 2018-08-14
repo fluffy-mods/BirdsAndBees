@@ -21,8 +21,8 @@ namespace Fluffy_BirdsAndBees
         public static int LovinLevel( Pawn pawn, Pawn partner )
         {
             // get pawns fertility stat, manipulation stat and mutual attraction to generate a random lovin' experience
-            var performance = pawn.health.capacities.GetLevel(PawnCapacityDefOf.Reproduction) *
-                              partner.health.capacities.GetLevel(PawnCapacityDefOf.Reproduction) *
+            var performance = pawn.health.capacities.GetLevel(PawnCapacityDefOf.Fertility) *
+                              partner.health.capacities.GetLevel(PawnCapacityDefOf.Fertility) *
                               pawn.health.capacities.GetLevel(RimWorld.PawnCapacityDefOf.Manipulation) *
                               partner.health.capacities.GetLevel(RimWorld.PawnCapacityDefOf.Manipulation);
 

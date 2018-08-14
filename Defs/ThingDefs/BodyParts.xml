@@ -38,7 +38,7 @@
     <label>bionic reproductive organs</label>
     <description>Provide phenomenal stamina and boost fertility.</description>
     <graphicData>
-      <texPath>Things/Item/BodyPart/BodyPartBionic</texPath>
+      <texPath>Things/Item/Health/HealthItemBionic</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.80</drawSize>
     </graphicData>

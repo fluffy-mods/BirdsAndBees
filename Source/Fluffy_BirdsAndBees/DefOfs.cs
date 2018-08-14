@@ -16,7 +16,7 @@ namespace Fluffy_BirdsAndBees
     [DefOf]
     public class PawnCapacityDefOf
     {
-        public static PawnCapacityDef Reproduction;
+        public static PawnCapacityDef Fertility;
     }
 
     [DefOf]
