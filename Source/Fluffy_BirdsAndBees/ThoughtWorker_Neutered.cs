@@ -11,7 +11,7 @@ namespace Fluffy_BirdsAndBees
     {
         protected override ThoughtState CurrentStateInternal( Pawn p )
         {
-            if ( !p.RaceProps.Humanlike )
+            if ( !p.RaceProps.Humanlike || p.RaceProps.IsMechanoid )
                 return ThoughtState.Inactive;
 
             if (p.health.hediffSet.PartIsMissing(p.ReproductiveOrgans()))
