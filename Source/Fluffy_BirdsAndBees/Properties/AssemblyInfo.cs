@@ -34,5 +34,5 @@ using Verse;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.10.40")]
-[assembly: AssemblyFileVersion("1.10.40")]
+[assembly: AssemblyVersion("2.0.43")]
+[assembly: AssemblyFileVersion("2.0.43")]
