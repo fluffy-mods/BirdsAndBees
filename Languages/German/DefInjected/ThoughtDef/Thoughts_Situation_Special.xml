@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- random, lasts an hour, only applies to females in hormonal stage of menopause -->
+
+  <HotFlash.stages.hot_flash.label>Hitzewallung</HotFlash.stages.hot_flash.label>
+  <HotFlash.stages.hot_flash.description>Ich fühle mich sehr heiß gerade.</HotFlash.stages.hot_flash.description>
+
+
+  <!-- neutered & missing part (which are not the same!) -->
+
+  <Neutered.stages.neutered.label>sterilisiert</Neutered.stages.neutered.label>
+  <Neutered.stages.neutered.description>Ich fühl mich nicht vollständig.</Neutered.stages.neutered.description>
+  <Neutered.stages.castrated.label>kastriert</Neutered.stages.castrated.label>
+  <Neutered.stages.castrated.description>Ich wurde ohne meine Zustimmung kastriert. Gibt's denn keine Gerechtigkeit mehr auf dieser Welt?</Neutered.stages.castrated.description>
+
+  <SomeoneNeutered.stages.criminal_neutered.label>Krimineller kastriert</SomeoneNeutered.stages.criminal_neutered.label>
+  <SomeoneNeutered.stages.criminal_neutered.description>HE hat es wahrscheinlich verdient</SomeoneNeutered.stages.criminal_neutered.description>
+  <SomeoneNeutered.stages.prisoner_neutered.label>Gefangener kastriert</SomeoneNeutered.stages.prisoner_neutered.label>
+  <SomeoneNeutered.stages.prisoner_neutered.description>Ein Gefangener wurde kastriert. Müssen wir wirklich so mit unseren Gefangenen umgehen?</SomeoneNeutered.stages.prisoner_neutered.description>
+  <SomeoneNeutered.stages.guest_neutered.label>Gast kastriert</SomeoneNeutered.stages.guest_neutered.label>
+  <SomeoneNeutered.stages.guest_neutered.description>Ein Gast wurde kastriert. Was hat HE angestellt, um soetwas erleiden zu müssen?</SomeoneNeutered.stages.guest_neutered.description>
+  <SomeoneNeutered.stages.colonist_neutered.label>Kolonist kastriert</SomeoneNeutered.stages.colonist_neutered.label>
+  <SomeoneNeutered.stages.colonist_neutered.description>Ein Kolonist wurde kastriert. Ich habe Angst ich bin der Nächste...</SomeoneNeutered.stages.colonist_neutered.description>
+
+</LanguageData>

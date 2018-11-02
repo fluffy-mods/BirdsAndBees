@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Impotence.label>Impotent</Impotence.label>
+  <Impotence.stages.onset.label>beginn</Impotence.stages.onset.label>
+  <Impotence.stages.minor.label>gering</Impotence.stages.minor.label>
+  <Impotence.stages.major.label>bedeutend</Impotence.stages.major.label>
+
+  <Menopause.label>Wechseljahre</Menopause.label>
+  <Menopause.stages.onset.label>beginn</Menopause.stages.onset.label>
+  <Menopause.stages.hormonal.label>hormonal</Menopause.stages.hormonal.label>
+
+</LanguageData>

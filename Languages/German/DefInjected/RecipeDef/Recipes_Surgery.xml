@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Neuter.label>kastrieren</Neuter.label>
+  <Neuter.description>Verhindert Fortpflanzung</Neuter.description>
+  <Neuter.jobString>Kastration</Neuter.jobString>
+
+  <InstallBionicReproductiveOrgans.label>installiere bionische Fortpflanzungsorgan</InstallBionicReproductiveOrgans.label>
+  <InstallBionicReproductiveOrgans.description>Installiert bionische Fortpflanzungsorgan.</InstallBionicReproductiveOrgans.description>
+  <InstallBionicReproductiveOrgans.jobString>Installiert bionische Fortpflanzungsorgan.</InstallBionicReproductiveOrgans.jobString>
+
+  <InstallBasicReproductiveOrgans.label>installiere improvisiertes Fortpflanzungsorgan</InstallBasicReproductiveOrgans.label>
+  <InstallBasicReproductiveOrgans.description>Installiert improvisiertes Fortpflanzungsorgan.</InstallBasicReproductiveOrgans.description>
+  <InstallBasicReproductiveOrgans.jobString>Installiert improvisiertes Fortpflanzungsorgan.</InstallBasicReproductiveOrgans.jobString>
+
+
+</LanguageData>
