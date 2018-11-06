@@ -14,8 +14,8 @@ namespace Fluffy_BirdsAndBees
             if ( !p.RaceProps.Humanlike || p.RaceProps.IsMechanoid )
                 return ThoughtState.Inactive;
 
-            if (p.health.hediffSet.PartIsMissing(p.ReproductiveOrgans()))
-                return ThoughtState.ActiveAtStage(1);
+            if ( p.health.hediffSet.PartIsMissing( p.ReproductiveOrgans() ) )
+                return ThoughtState.ActiveAtStage( 1 );
             if ( !p.health.capacities.CapableOf( PawnCapacityDefOf.Fertility) // neutered, basic implants
                  && !p.health.hediffSet.HasHediff( HediffDefOf.Menopause ) // but not by natural causes
                  && !p.health.hediffSet.HasHediff( HediffDefOf.Impotence ) ) 
