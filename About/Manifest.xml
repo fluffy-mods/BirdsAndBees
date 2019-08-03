@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
-  <version>2.3.47</version>
-  <manifestUri>https://rawgit.com/FluffierThanThou/BirdsAndBees/master/About/Manifest.xml</manifestUri>
-  <downloadUri>https://github.com/FluffierThanThou/BirdsAndBees/releases/v2.3.47</downloadUri>
+  <version>2.3.48</version>
+  <manifestUri>https://cdn.jsdelivr.net/gh/FluffierThanThou/BirdsAndBees/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/FluffierThanThou/BirdsAndBees/releases/v2.3.48</downloadUri>
 </Manifest>
