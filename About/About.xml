@@ -3,7 +3,6 @@
   <name>The Birds and the Bees</name>
   <author>Fluffy</author>
   <url>https://ludeon.com/forums/index.php?topic=15964.0</url>
-  <targetVersion>1.0.2059</targetVersion>
   <description>Adds reproductive organs to the animals, and then you, raiders and time can take them away again. 
 
 &lt;b&gt;Does NOT require a new save game&lt;/b&gt; 
@@ -43,10 +42,13 @@ Second, the timescale just doesn’t work. The average colony will last a couple
 kouyou:    Japanese translation
 Duduluu:    Chinese translations
 Jdalt40:    remove obsolete abstract defs
-rw-chaos:    
+rw-chaos:    German translation
 
 &lt;size=24&gt;Version&lt;/size&gt;
-This is version 2.3.47, for RimWorld 1.0.2059.
+This is version 2.2.47, for RimWorld 1.0.2282.
 
 </description>
+  <supportedVersions>
+    <li>1.0</li>
+  </supportedVersions>
 </ModMetaData>

@@ -9,6 +9,7 @@
     <listOrder>200</listOrder>
     <lethalFlesh>false</lethalFlesh>
     <showOnMechanoids>false</showOnMechanoids>
+    <minForCapable>0.15</minForCapable>
   </PawnCapacityDef>
 
 </Defs>
