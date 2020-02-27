@@ -5,12 +5,10 @@
 using System;
 using System.Diagnostics;
 using System.Reflection;
-using Harmony;
+using HarmonyLib;
 using RimWorld;
-using UnityEngine;
-using UnityEngine.Assertions;
 using Verse;
-using static Harmony.AccessTools;
+using static HarmonyLib.AccessTools;
 
 namespace Fluffy_BirdsAndBees
 {

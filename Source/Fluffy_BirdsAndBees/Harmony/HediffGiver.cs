@@ -1,14 +1,10 @@
-using System.Collections.Generic;
-using Harmony;
-using RimWorld;
-using UnityEngine;
+using HarmonyLib;
 using Verse;
 using static Fluffy_BirdsAndBees.Resources;
 
 namespace Fluffy_BirdsAndBees
 {
-    [HarmonyPatch( typeof( HediffGiver ) )]
-    [HarmonyPatch( "TryApply" )]
+    [HarmonyPatch( typeof( HediffGiver ), nameof( HediffGiver.TryApply ) )]
     public class HediffGiver_TryApply
     {
         static bool Prefix( HediffGiver __instance, ref bool __result, Pawn pawn )

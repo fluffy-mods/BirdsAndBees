@@ -1,13 +1,11 @@
-using Harmony;
+using HarmonyLib;
 using RimWorld;
-using UnityEngine;
 using Verse;
 using static Fluffy_BirdsAndBees.Resources;
 
 namespace Fluffy_BirdsAndBees
 {
-    [HarmonyPatch( typeof( PawnUtility ) )]
-    [HarmonyPatch( "FertileMateTarget" )]
+    [HarmonyPatch( typeof( PawnUtility ), nameof( PawnUtility.FertileMateTarget ) )]
     public class PawnUtility_FertileMateTarget
     {
         static bool Prefix( ref bool __result, Pawn female )

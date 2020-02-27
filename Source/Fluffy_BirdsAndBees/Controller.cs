@@ -2,13 +2,9 @@
 //#define DEBUG_HARMONY
 #endif
 
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using Harmony;
-using RimWorld;
+using HarmonyLib;
 using Verse;
-using static Fluffy_BirdsAndBees.Resources;
 
 namespace Fluffy_BirdsAndBees
 {
@@ -21,7 +17,7 @@ namespace Fluffy_BirdsAndBees
 #endif
 
 
-            var harmony = HarmonyInstance.Create("Fluffy.BirdsAndBees");
+            var harmony = new Harmony("Fluffy.BirdsAndBees");
             // patches;
             // HediffGiver.TryApply()
             // PawnUtility.FertileMateTarget()
