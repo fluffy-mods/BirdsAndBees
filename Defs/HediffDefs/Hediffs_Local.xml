@@ -6,6 +6,7 @@
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
     <label>neutered</label>
+    <description>for one reason or another, their privates have been removed.</description>
     <stages>
       <li>
         <capMods>

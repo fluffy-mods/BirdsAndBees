@@ -5,6 +5,7 @@
   <HediffDef ParentName="DiseaseBase">
     <defName>Impotence</defName>
     <label>impotent</label>
+    <description>slowly progressing inability to perform in men, related to old age</description>
     <comps>
       <li Class="HediffCompProperties_Immunizable">
         <compClass>HediffComp_Immunizable</compClass>
@@ -57,6 +58,7 @@
   <HediffDef ParentName="DiseaseBase">
     <defName>Menopause</defName>
     <label>menopausal</label>
+    <description>slowly progressing infertility in women, related to age. May cause hot flashes.</description>
     <comps>
       <li Class="HediffCompProperties_Immunizable">
         <compClass>HediffComp_Immunizable</compClass>

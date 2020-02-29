@@ -4,6 +4,7 @@
     <HediffDef ParentName="AddedBodyPartBase">
         <defName>SimpleProstheticReproductiveOrgans</defName>
         <label>improvised reproductive organs</label>
+        <description>a very crude reproductive organ, improvised from materials at hand</description>
         <addedPartProps>
             <solid>true</solid>
             <partEfficiency>0.0</partEfficiency>
@@ -13,6 +14,7 @@
     <HediffDef ParentName="AddedBodyPartBase">
         <defName>BionicReproductiveOrgans</defName>
         <label>bionic reproductive organs</label>
+        <description>high-tech reproductive organs, increasing both fertility and prowess</description>
         <spawnThingOnRemoved>BionicReproductiveOrgans</spawnThingOnRemoved>
         <addedPartProps>
             <solid>true</solid>
