@@ -1,4 +1,4 @@
-[![RimWorld 1](https://img.shields.io/badge/RimWorld-1-brightgreen.svg)](http://rimworldgame.com/)
+[![RimWorld 1.1](https://img.shields.io/badge/RimWorld-1.1-brightgreen.svg)](http://rimworldgame.com/)
 
 Adds reproductive organs to the animals, and then you, raiders and time can take them away again. 
 

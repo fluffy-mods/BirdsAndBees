@@ -49,9 +49,9 @@ This is version 3.2.51, for RimWorld 1.1.2558.
 
 </description>
   <supportedVersions>
-    <li>1</li>
+    <li>1.1</li>
   </supportedVersions>
-  <packageId>fluffy.thebirds and the bees</packageId>
+  <packageId>fluffy.thebirdsandthebees</packageId>
   <modDependencies>
     <li>
       <packageId>brrainz.harmony</packageId>
