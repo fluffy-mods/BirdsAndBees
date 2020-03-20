@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Added body parts -->
+  <SimpleProstheticReproductiveOrgans.label>手工生殖器
+</SimpleProstheticReproductiveOrgans.label>
+  <SimpleProstheticReproductiveOrgans.description>一個非常粗糙的生殖器官，由手頭的材料即興創作</SimpleProstheticReproductiveOrgans.description>
 
-  <SimpleProstheticReproductiveOrgans.label>簡易的生殖器官</SimpleProstheticReproductiveOrgans.label>
-  <BionicReproductiveOrgans.label>仿生生殖器官</BionicReproductiveOrgans.label>
+  <BionicReproductiveOrgans.label>仿生生殖器</BionicReproductiveOrgans.label>
+  <BionicReproductiveOrgans.description>高科技生殖器官，可提高生育能力和耐力</BionicReproductiveOrgans.description>
 
 
 </LanguageData>

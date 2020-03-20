@@ -3,25 +3,25 @@
 
   <!-- random, lasts an hour, only applies to females in hormonal stage of menopause -->
 
-  <HotFlash.stages.0.label>燥熱</HotFlash.stages.0.label>
-  <HotFlash.stages.0.description>現在我感覺非常熱。</HotFlash.stages.0.description>
+  <HotFlash.stages.0.label>熱潮紅</HotFlash.stages.0.label>
+  <HotFlash.stages.0.description>我現在感覺很熱。</HotFlash.stages.0.description>
 
 
   <!-- neutered & missing part (which are not the same!) -->
 
-  <Neutered.stages.0.label>絕育</Neutered.stages.0.label>
-  <Neutered.stages.0.description>我已經不能有孩子了。我還有生活目標嗎？</Neutered.stages.0.description>
+  <Neutered.stages.0.label>結紮</Neutered.stages.0.label>
+  <Neutered.stages.0.description>我覺得不完整。</Neutered.stages.0.description>
   <Neutered.stages.1.label>閹割</Neutered.stages.1.label>
-  <Neutered.stages.1.description>我現在是個廢人。</Neutered.stages.1.description>
+  <Neutered.stages.1.description>未經過同意把我給閹割。這個世界上沒有正義嗎？</Neutered.stages.1.description>
 
-  <SomeoneNeutered.stages.0.label>罪犯被絕育</SomeoneNeutered.stages.0.label>
-  <SomeoneNeutered.stages.0.description>HE大概算是活該吧。</SomeoneNeutered.stages.0.description>
-  <SomeoneNeutered.stages.1.label>囚犯被絕育</SomeoneNeutered.stages.1.label>
-  <SomeoneNeutered.stages.1.description>一名囚犯被絕育了。我們真的應該這樣對待囚犯嗎？</SomeoneNeutered.stages.1.description>
-  <SomeoneNeutered.stages.2.label>訪客被絕育</SomeoneNeutered.stages.2.label>
-  <SomeoneNeutered.stages.2.description>一名訪客被絕育了。HE做了什麼要遭這種罪？</SomeoneNeutered.stages.2.description>
-  <SomeoneNeutered.stages.3.label>殖民者被絕育</SomeoneNeutered.stages.3.label>
-  <SomeoneNeutered.stages.3.description>移民殖民者被絕育了。我怕我是下一個……</SomeoneNeutered.stages.3.description>
+  <SomeoneNeutered.stages.0.label>囚犯被結紮</SomeoneNeutered.stages.0.label>
+  <SomeoneNeutered.stages.0.description>HE probably had it coming</SomeoneNeutered.stages.0.description>
+  <SomeoneNeutered.stages.1.label>囚犯被結紮</SomeoneNeutered.stages.1.label>
+  <SomeoneNeutered.stages.1.description>A prisoner was neutered. 我們應該這樣對待囚犯嗎？</SomeoneNeutered.stages.1.description>
+  <SomeoneNeutered.stages.2.label>訪客被結紮</SomeoneNeutered.stages.2.label>
+  <SomeoneNeutered.stages.2.description>A guest was neutered. What did HE do to deserve this?</SomeoneNeutered.stages.2.description>
+  <SomeoneNeutered.stages.3.label>殖民者被結紮</SomeoneNeutered.stages.3.label>
+  <SomeoneNeutered.stages.3.description>一個殖民者被絕育了。恐怕我會是下一個...</SomeoneNeutered.stages.3.description>
 
 
 </LanguageData>
