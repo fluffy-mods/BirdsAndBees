@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Neuter.label>絕育</Neuter.label>
+  <Neuter.label>結紮</Neuter.label>
   <Neuter.description>去除生育能力。</Neuter.description>
-  <Neuter.jobString>正在絕育。</Neuter.jobString>
+  <Neuter.jobString>結紮中.</Neuter.jobString>
 
-  <InstallBionicReproductiveOrgans.label>安裝仿生生殖器官</InstallBionicReproductiveOrgans.label>
-  <InstallBionicReproductiveOrgans.description>安裝仿生生殖器官。</InstallBionicReproductiveOrgans.description>
-  <InstallBionicReproductiveOrgans.jobString>正在安裝仿生生殖器官。</InstallBionicReproductiveOrgans.jobString>
+  <InstallBionicReproductiveOrgans.label>安裝仿生生殖器</InstallBionicReproductiveOrgans.label>
+  <InstallBionicReproductiveOrgans.description>安裝仿生生殖器.</InstallBionicReproductiveOrgans.description>
+  <InstallBionicReproductiveOrgans.description>正在安裝仿生生殖器.</InstallBionicReproductiveOrgans.jobString>
 
-  <InstallBasicReproductiveOrgans.label>安裝簡易的生殖器官</InstallBasicReproductiveOrgans.label>
-  <InstallBasicReproductiveOrgans.description>安裝簡易的生殖器官。</InstallBasicReproductiveOrgans.description>
-  <InstallBasicReproductiveOrgans.jobString>正在安裝簡易的生殖器官。</InstallBasicReproductiveOrgans.jobString>
+  <InstallBasicReproductiveOrgans.label>安裝手工生殖器</InstallBasicReproductiveOrgans.label>
+  <InstallBasicReproductiveOrgans.description>安裝手工生殖器.</InstallBasicReproductiveOrgans.description>
+  <InstallBasicReproductiveOrgans.description>正在安裝手工生殖器.</InstallBasicReproductiveOrgans.jobString>
 
 
 </LanguageData>

@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Neutered.label>已絕育</Neutered.label>
+  <Neutered.label>閹割</Neutered.label>
+  <Neutered.description>由於某種原因，他們的器官被切除。</Neutered.description>
 
 
 </LanguageData>
