@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Impotence.label>性功能障碍</Impotence.label>
+  <Impotence.label>性无能</Impotence.label>
+  <Impotence.description>男人的衰老症状，导致性功能障碍</Impotence.description>
   <Impotence.stages.0.label>发病</Impotence.stages.0.label>
   <Impotence.stages.1.label>较轻</Impotence.stages.1.label>
   <Impotence.stages.2.label>严重</Impotence.stages.2.label>
 
   <Menopause.label>更年期</Menopause.label>
-  <Menopause.stages.0.label>发病</Menopause.stages.0.label>
+  <Menopause.description>女人的衰老症状，生育能力逐渐下降。可能会导致燥热</Menopause.description>
+  <Menopause.stages.0.label>初期</Menopause.stages.0.label>
   <Menopause.stages.1.label>荷尔蒙</Menopause.stages.1.label>
 
 

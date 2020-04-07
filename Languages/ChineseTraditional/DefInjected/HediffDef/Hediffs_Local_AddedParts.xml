@@ -4,7 +4,8 @@
   <!-- Added body parts -->
 
   <SimpleProstheticReproductiveOrgans.label>簡易的生殖器官</SimpleProstheticReproductiveOrgans.label>
+  <SimpleProstheticReproductiveOrgans.description>很粗糙的生殖器官，用手頭的材料拼湊起來</SimpleProstheticReproductiveOrgans.description>
   <BionicReproductiveOrgans.label>仿生生殖器官</BionicReproductiveOrgans.label>
-
+  <BionicReproductiveOrgans.description>高科技生殖器官，同時提高生育能力和技巧</BionicReproductiveOrgans.description>
 
 </LanguageData>
