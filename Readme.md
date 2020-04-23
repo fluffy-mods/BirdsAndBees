@@ -37,6 +37,8 @@ _TLDR; if you want babies, go ask Tynan._
  - Jdalt40:	remove obsolete abstract defs
  - rw-chaos:	German translation
  - shiuanyue:	Chinese translations
+ - Han Yaodong:	Simplified Chinese translation
+ - gast:	
 
 # Think you found a bug? 
 Please read [this guide](http://steamcommunity.com/sharedfiles/filedetails/?id=725234314) before creating a bug report,
@@ -59,4 +61,4 @@ Show your appreciation by buying me a coffee (or contribute towards a nice singl
 [![I Have a Black Dog](https://i.ibb.co/ss59Rwy/New-Project-2.png)](https://www.youtube.com/watch?v=XiCrniLQGYc)
 
 # Version
-This is version 3.6.55, for RimWorld 1.1.2579.
+This is version 3.7.57, for RimWorld 1.1.2610.
