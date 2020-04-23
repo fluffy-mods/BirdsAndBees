@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Neutered.label>已绝育</Neutered.label>
-
+  <Neutered.label>绝育</Neutered.label>
+  <Neutered.description>由于某种原因，他们的私密部位被移除了。</Neutered.description>
 
 </LanguageData>

@@ -3,7 +3,7 @@
 
   <!-- todo: pawnCapacityDef override with custom labeller for male/female -->
 
-  <Reproduction.label>生育能力</Reproduction.label>
+  <Fertility.label>生育能力</Fertility.label>
 
 
 </LanguageData>
