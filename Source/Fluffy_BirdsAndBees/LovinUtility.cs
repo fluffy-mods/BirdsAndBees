@@ -38,8 +38,6 @@ namespace Fluffy_BirdsAndBees
             // in the first place, and - with the exception of traits - I don't feel they should have much effect on the success of lovin`
             if (pawn.health.capacities.CapableOf(RimWorld.PawnCapacityDefOf.Sight))
             {
-                if (RelationsUtility.IsDisfigured(partner))
-                    performance *= .8f;
                 performance *= (partner.story.traits.DegreeOfTrait(TraitDefOf.Beauty) / 10f) + 1;
                 // 2 = beautiful, 1 = pretty, 0 = inactive. / 10 + 1 gives 1 - 1.4 scale.
             }
